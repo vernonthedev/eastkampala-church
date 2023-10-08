@@ -41,9 +41,9 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.html">Plan your visit</a></li>
+              <li><a href="plan-visit.php">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -129,18 +129,18 @@
                 <li><a href="events.html">Events</a>
                   <ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="events-timeline.html">Events Timeline</a></li>
+                    <li><a href="bulletin.php">Events Timeline</a></li>
                     <li><a href="google-calendar.html">Google Calender</a></li>
                     <li><a href="events-calendar.html">Events Calender</a></li>
                     <li><a href="events-grid.html">Events Masonry Grid</a></li>
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.html">Sermons</a>
+                <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
-                    <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -149,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -166,16 +166,16 @@
                   <ul class="dropdown">
                     <li><a href="blog-masonry.html">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="blog-timeline.html">Timeline Blog</a></li>
+                    <li><a href="church-history.php">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="church-projects.php">Causes Grid</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -187,13 +187,13 @@
   </header>
   <!-- End Site Header --> 
   <!-- Start Nav Backed Header -->
-  <div class="nav-backed-header parallax">
+  <div class="nav-backed-header parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="active">Contact</li>
+            <li class="active">Blog Masonry</li>
           </ol>
         </div>
       </div>
@@ -205,7 +205,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Contact</h1>
+          <h1>Blog Masonry</h1>
         </div>
       </div>
     </div>
@@ -216,62 +216,76 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
-          <div class="col-md-9">
-            <header class="single-post-header clearfix">
-              <h2 class="post-title">Our Location</h2>
-            </header>
-            <div class="post-content">
-              <div id="gmap">
-                <iframe src="https://maps.google.com/?ie=UTF8&amp;ll=40.717989,-74.002705&amp;spn=0.043846,0.077162&amp;t=m&amp;z=14&amp;output=embed"></iframe>
-              </div>
-              <div class="row">
-                <form method="post" id="contactform" name="contactform" class="contact-form" action="mail/contact.php">
-                  <div class="col-md-6 margin-15">
-                    <div class="form-group">
-                      <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="Name*">
-                    </div>
-                    <div class="form-group">
-                      <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Phone">
-                    </div>
+          <div class="col-md-12">
+            <ul class="grid-holder col-3 events-grid">
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value="Submit now!">
-                  </div>
-                </form>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                  <div id="message"></div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- Start Sidebar -->
-          <div class="col-md-3 sidebar"> 
-            <!-- Recent Posts Widget -->
-            <div class="widget-recent-posts widget">
-              <div class="sidebar-widget-title">
-                <h3>Recent Posts</h3>
-              </div>
-              <ul>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque corrupti voluptatum deleniti atque corrupti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque corrupti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque corrupti voluptatum deleniti atque corrupti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span> </div>
+                </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item post format-standard">
+                <div class="grid-item-inner"> <a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="daily-devotion.php">Blog post with featured image</a></h3>
+                    <span class="meta-data"><span><i class="fa fa-calendar"></i> 24th Nov, 2013</span><span><a href="#"><i class="fa fa-tag"></i>Uncategoried</a></span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <!-- Pagination -->
+            <ul class="pager pull-right">
+              <li><a href="#">&larr; Older</a></li>
+              <li><a href="#">Newer &rarr;</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -294,7 +308,7 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
             <li><a href="blog-masonry.html">Our Blog</a></li>
           </ul>
         </div>

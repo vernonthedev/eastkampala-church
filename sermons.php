@@ -41,9 +41,9 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.html">Plan your visit</a></li>
+              <li><a href="plan-visit.php">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -129,7 +129,7 @@
                 <li><a href="events.html">Events</a>
                   <ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="events-timeline.html">Events Timeline</a></li>
+                    <li><a href="bulletin.php">Events Timeline</a></li>
                     <li><a href="google-calendar.html">Google Calender</a></li>
                     <li><a href="events-calendar.html">Events Calender</a></li>
                     <li><a href="events-grid.html">Events Masonry Grid</a></li>
@@ -140,7 +140,7 @@
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
                     <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -149,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -162,20 +162,20 @@
                     <li><a href="gallery-masonry.html">Masonry Grid</a></li>
                   </ul>
                 </li>
-                <li><a href="blog-masonry.html">Blog</a>
+                <li><a href="devotions.php">Blog</a>
                   <ul class="dropdown">
-                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                    <li><a href="devotions.php">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="blog-timeline.html">Timeline Blog</a></li>
+                    <li><a href="church-history.php">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="church-projects.php">Causes Grid</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -193,7 +193,7 @@
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="active">Plan your visit</li>
+            <li class="active">Sermons</li>
           </ol>
         </div>
       </div>
@@ -205,7 +205,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Plan your visit</h1>
+          <h1>Sermons</h1>
         </div>
       </div>
     </div>
@@ -216,66 +216,123 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
-          <div class="col-md-9">
-            <header class="single-post-header clearfix">
-              <h2 class="post-title">Here is how you can reach us</h2>
-            </header>
-            <div class="post-content">
-              <p><span class="label label-danger">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
+          <div class="col-md-8 sermon-archive"> 
+            <!-- Sermons Listing -->
+            <article class="post sermon">
+              <header class="post-title">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <h3><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h3>
+                    <span class="meta-data"><i class="fa fa-calendar"></i> Posted on 17th Dec, 2013 | Pastor: <a href="#">Admin</a></span> </div>
+                  <div class="col-md-3 col-sm-3 sermon-actions"> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video" ><i class="fa fa-video-camera"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio" ><i class="fa fa-headphones"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online" ><i class="fa fa-file-text-o"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF" ><i class="fa fa-book"></i></a> </div>
                 </div>
-                <div class="col-md-6">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
+              </header>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-md-4"> <a href="sermon-details.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a> </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <p><a href="sermon-details.php" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </article>
+            <article class="post sermon">
+              <header class="post-title">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <h3><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h3>
+                    <span class="meta-data"><i class="fa fa-calendar"></i> Posted on 17th Dec, 2013 | Pastor: <a href="#">Admin</a></span> </div>
+                  <div class="col-md-3 col-sm-3 sermon-actions"> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video" ><i class="fa fa-video-camera"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio" ><i class="fa fa-headphones"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online" ><i class="fa fa-file-text-o"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF" ><i class="fa fa-book"></i></a> </div>
+                </div>
+              </header>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-md-4"> <a href="sermon-details.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a> </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <p><a href="sermon-details.php" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="post sermon">
+              <header class="post-title">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <h3><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h3>
+                    <span class="meta-data"><i class="fa fa-calendar"></i> Posted on 17th Dec, 2013 | Pastor: <a href="#">Admin</a></span> </div>
+                  <div class="col-md-3 col-sm-3 sermon-actions"> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video" ><i class="fa fa-video-camera"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio" ><i class="fa fa-headphones"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online" ><i class="fa fa-file-text-o"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF" ><i class="fa fa-book"></i></a> </div>
+                </div>
+              </header>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-md-4"> <a href="sermon-details.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a> </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <p><a href="sermon-details.php" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="post sermon">
+              <header class="post-title">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <h3><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h3>
+                    <span class="meta-data"><i class="fa fa-calendar"></i> Posted on 17th Dec, 2013 | Pastor: <a href="#">Admin</a></span> </div>
+                  <div class="col-md-3 col-sm-3 sermon-actions"> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video" ><i class="fa fa-video-camera"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio" ><i class="fa fa-headphones"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online" ><i class="fa fa-file-text-o"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF" ><i class="fa fa-book"></i></a> </div>
+                </div>
+              </header>
+              <div class="post-content">
+                <div class="row">
+                  <div class="col-md-4"> <a href="sermon-details.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a> </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <p><a href="sermon-details.php" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <ul class="pagination">
+              <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+            </ul>
           </div>
           <!-- Start Sidebar -->
-          <div class="col-md-3 sidebar">
-            <div class="widget-upcoming-events widget">
+          <div class="col-md-4 sidebar">
+            <div class="widget sidebar-widget">
               <div class="sidebar-widget-title">
-                <h3>Upcoming Events</h3>
+                <h3>Sermon Categories</h3>
               </div>
               <ul>
-                <li class="item event-item clearfix">
-                  <div class="event-date"> <span class="date">06</span> <span class="month">Aug</span> </div>
-                  <div class="event-detail">
-                    <h4><a href="#">Monday Prayer</a></h4>
-                    <span class="event-dayntime meta-data">Monday | 07:00 AM</span> </div>
-                </li>
-                <li class="item event-item clearfix">
-                  <div class="event-date"> <span class="date">28</span> <span class="month">Aug</span> </div>
-                  <div class="event-detail">
-                    <h4><a href="#">Staff members meet</a></h4>
-                    <span class="event-dayntime meta-data">Monday | 01:00 PM</span> </div>
-                </li>
-                <li class="item event-item clearfix">
-                  <div class="event-date"> <span class="date">25</span> <span class="month">Sep</span> </div>
-                  <div class="event-detail">
-                    <h4><a href="#">Evening Prayer</a></h4>
-                    <span class="event-dayntime meta-data">Friday | 06:00 PM</span> </div>
-                </li>
+                <li><a href="#">Faith</a> (10)</li>
+                <li><a href="#">Missions</a> (12)</li>
+                <li><a href="#">Salvation</a> (34)</li>
+                <li><a href="#">Worship</a> (14)</li>
               </ul>
             </div>
-            <!-- Recent Posts Widget -->
-            <div class="widget-recent-posts widget">
+            <div class="widget sidebar-widget">
               <div class="sidebar-widget-title">
-                <h3>Recent Posts</h3>
+                <h3>Sermon Speakers</h3>
               </div>
               <ul>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque corrupti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
-                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
-                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
-                </li>
+                <li><a href="#">John Doe</a> (5)</li>
+                <li><a href="#">Mandra Patrick</a> (13)</li>
+                <li><a href="#">Sophie Chandol</a> (34)</li>
+                <li><a href="#">John Doe</a> (2)</li>
               </ul>
+            </div>
+            <div class="widget sidebar-widget">
+              <div class="sidebar-widget-title">
+                <h3>Sermon Tags</h3>
+              </div>
+              <div class="tag-cloud"> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> </div>
             </div>
           </div>
         </div>
@@ -300,7 +357,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
             <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">

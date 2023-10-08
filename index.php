@@ -68,7 +68,7 @@
           <div class="featured-blocks clearfix">
             <div class="col-md-4 col-sm-4 featured-block"> <a href="our-staff.html" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Our Pastors</strong> <span class="more">read more</span> </a> </div>
             <div class="col-md-4 col-sm-4 featured-block"> <a href="about.html" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.html" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
           </div>
           <!-- End Featured Blocks -->
         </div>
@@ -124,7 +124,7 @@
                       <div class="col-md-4"> <a href="#" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a></div>
                       <div class="col-md-8">
                         <div class="post-title">
-                          <h2><a href="blog-post.html">Voluptatum deleniti atque corrupti</a></h2>
+                          <h2><a href="daily-devotion.php">Voluptatum deleniti atque corrupti</a></h2>
                           <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
                       </div>
@@ -132,10 +132,10 @@
                   </li>
                   <li class="item post">
                     <div class="row">
-                      <div class="col-md-4"> <a href="blog-post.html" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a></div>
+                      <div class="col-md-4"> <a href="daily-devotion.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a></div>
                       <div class="col-md-8">
                         <div class="post-title">
-                          <h2><a href="blog-post.html">Voluptatum deleniti atque corrupti</a></h2>
+                          <h2><a href="daily-devotion.php">Voluptatum deleniti atque corrupti</a></h2>
                           <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
                       </div>
@@ -155,7 +155,7 @@
               <section class="listing-cont">
                 <ul>
                   <li class="item sermon featured-sermon"> <span class="date">Feb 14, 2014</span>
-                    <h4><a href="single-sermon.html">How To Recover The Cutting Edge</a></h4>
+                    <h4><a href="sermon-details.php">How To Recover The Cutting Edge</a></h4>
                     <div class="featured-sermon-video">
                       <iframe width="200" height="150" src="http://player.vimeo.com/video/19564018?title=0&amp;byline=0&amp;color=007F7B"></iframe>
                     </div>
@@ -163,13 +163,13 @@
                     <div class="sermon-actions"> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video"><i class="fa fa-video-camera"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio"><i class="fa fa-headphones"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online"><i class="fa fa-file-text-o"></i></a> <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF"><i class="fa fa-book"></i></a> </div>
                   </li>
                   <li class="item sermon">
-                    <h2 class="sermon-title"><a href="single-sermon.html">Voluptatum deleniti atque corrupti</a></h2>
+                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
                     <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
                   <li class="item sermon">
-                    <h2 class="sermon-title"><a href="single-sermon.html">Voluptatum deleniti atque corrupti</a></h2>
+                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
                     <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
                   <li class="item sermon">
-                    <h2 class="sermon-title"><a href="single-sermon.html">Voluptatum deleniti atque corrupti</a></h2>
+                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
                     <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
                 </ul>
               </section>
@@ -210,8 +210,8 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">

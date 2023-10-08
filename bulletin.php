@@ -20,7 +20,7 @@
 <link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
 <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color1.css" rel="stylesheet" type="text/css"> 
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
 <link href="css/custom.css" rel="stylesheet" type="text/css"> 
 <!-- SCRIPTS
   ================================================== -->
@@ -30,7 +30,7 @@
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
-<div class="body"> 
+<div class="body">  
   <!-- Start Site Header -->
   <header class="site-header">
     <div class="topbar">
@@ -41,9 +41,9 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.html">Plan your visit</a></li>
+              <li><a href="plan-visit.php">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -136,11 +136,11 @@
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.html">Sermons</a>
+                <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
-                    <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -149,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -162,20 +162,20 @@
                     <li><a href="gallery-masonry.html">Masonry Grid</a></li>
                   </ul>
                 </li>
-                <li><a href="blog-masonry.html">Blog</a>
+                <li><a href="devotions.php">Blog</a>
                   <ul class="dropdown">
-                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                    <li><a href="devotions.php">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="blog-timeline.html">Timeline Blog</a></li>
+                    <li><a href="church-history.php">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="church-projects.php">Causes Grid</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -193,7 +193,7 @@
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="active">Events Grid</li>
+            <li class="active">Events</li>
           </ol>
         </div>
       </div>
@@ -205,7 +205,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Events Grid</h1>
+          <h1>Events Timeline</h1>
         </div>
       </div>
     </div>
@@ -215,88 +215,70 @@
   <div class="main" role="main">
     <div id="content" class="content full">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="grid-holder col-3 events-grid">
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+        <ul class="timeline">
+            <li>
+              <div class="timeline-badge">Mar<span>2014</span></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title"><a href="single-event.html">Monday Prayer</a></h3>
                 </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/800x450&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+                <div class="timeline-body">
+                    <ul class="info-table">
+                      <li><i class="fa fa-calendar"></i> <strong>Monday</strong> | 6th March, 2014</li>
+                      <li><i class="fa fa-clock-o"></i> 7:00 AM - 1:00 PM</li>
+                      <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
+                      <li><i class="fa fa-phone"></i> 1 800 321 4321</li>
+                    </ul>
                 </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title"><a href="single-event.html">Staff members meet</a></h3>
                 </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/800x450&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+                <div class="timeline-body">
+                    <ul class="info-table">
+                      <li><i class="fa fa-calendar"></i> <strong>Friday</strong> | 25th March, 2014</li>
+                      <li><i class="fa fa-clock-o"></i> 7:00 AM - 1:00 PM</li>
+                      <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
+                      <li><i class="fa fa-phone"></i> 1 800 321 4321</li>
+                    </ul>
                 </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">Feb<span>2014</span></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title"><a href="single-event.html">Evening Prayer</a></h3>
                 </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
+                <div class="timeline-body">
+                    <ul class="info-table">
+                      <li><i class="fa fa-calendar"></i> <strong>Monday</strong> | 6th February, 2014</li>
+                      <li><i class="fa fa-clock-o"></i> 7:00 PM - 8:00 PM</li>
+                      <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
+                      <li><i class="fa fa-phone"></i> 1 800 321 4321</li>
+                    </ul>
                 </div>
-              </li>
-            </ul>
-            <ul class="pager pull-right">
-              <li><a href="#">&larr; Older</a></li>
-              <li><a href="#">Newer &rarr;</a></li>
-            </ul>
-          </div>
-        </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title"><a href="single-event.html">Monday Prayer</a></h3>
+                </div>
+                <div class="timeline-body">
+                    <ul class="info-table">
+                      <li><i class="fa fa-calendar"></i> <strong>Monday</strong> | 6th February, 2014</li>
+                      <li><i class="fa fa-clock-o"></i> 7:00 AM - 1:00 PM</li>
+                      <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
+                      <li><i class="fa fa-phone"></i> 1 800 321 4321</li>
+                    </ul>
+                </div>
+              </div>
+            </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -317,8 +299,8 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">
@@ -342,7 +324,7 @@
     </div>
   </footer>
   <!-- End Footer --> 
-  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> 
 </div>
 <script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
 <script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 

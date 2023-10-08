@@ -21,6 +21,7 @@
 <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href="colors/color1.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css"> 
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
@@ -29,7 +30,7 @@
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
-<div class="body">  
+<div class="body"> 
   <!-- Start Site Header -->
   <header class="site-header">
     <div class="topbar">
@@ -40,9 +41,9 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.html">Plan your visit</a></li>
+              <li><a href="plan-visit.php">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -128,18 +129,18 @@
                 <li><a href="events.html">Events</a>
                   <ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="events-timeline.html">Events Timeline</a></li>
+                    <li><a href="bulletin.php">Events Timeline</a></li>
                     <li><a href="google-calendar.html">Google Calender</a></li>
                     <li><a href="events-calendar.html">Events Calender</a></li>
                     <li><a href="events-grid.html">Events Masonry Grid</a></li>
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.html">Sermons</a>
+                <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
-                    <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -148,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -161,20 +162,20 @@
                     <li><a href="gallery-masonry.html">Masonry Grid</a></li>
                   </ul>
                 </li>
-                <li><a href="blog-masonry.html">Blog</a>
+                <li><a href="devotions.php">Blog</a>
                   <ul class="dropdown">
-                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                    <li><a href="devotions.php">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="blog-timeline.html">Timeline Blog</a></li>
+                    <li><a href="church-history.php">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
                     <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -192,7 +193,7 @@
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="active">Albums</li>
+            <li class="active">Causes Grid</li>
           </ol>
         </div>
       </div>
@@ -204,7 +205,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Sermon Albums</h1>
+          <h1>Causes Grid</h1>
         </div>
       </div>
     </div>
@@ -215,97 +216,180 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
-          <div class="col-md-9 posts-archive">
-            <div class="post">
-              <div class="row">
-                <div class="col-md-4 col-sm-4">
-                 		<a href="sermons.html" class="album-cover">
-                          <span class="album-image"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></span>
-                   	</a>
-                     	<div class="label label-default album-count">16 videos</div>
-                     	<div class="label label-default album-count">6 audios</div>
+          <div class="col-md-12">
+            <ul class="grid-holder col-3 causes-grid">
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x700&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Refugee's Restoration Hope</a></h3>
+                    <div class="progress-label">
+                    	90% Donated of <span>$2000000</span>
+                    	<label class="cause-days-togo label label-default pull-right">45 days to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" data-appear-progress-animation="90%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-                <div class="col-md-8 col-sm-8">
-                  <h3><a href="sermons.html">Prayers Collection</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
+              </li>
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Green Revolution</a></h3>
+                    <div class="progress-label">
+                    	60% Donated of <span>$20000</span>
+                    	<label class="cause-days-togo label label-default pull-right">2 months to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" data-appear-progress-animation="60%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="post">
-              <div class="row">
-                <div class="col-md-4 col-sm-4">
-                 		<a href="sermons.html" class="album-cover">
-                          <span class="album-image"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></span>
-                   	</a>
-                     	<div class="label label-default album-count">16 videos</div>
-                     	<div class="label label-default album-count">6 audios</div>
+              </li>
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Education for Masai children</a></h3>
+                    <div class="progress-label">
+                    	80% Donated of <span>$200000</span>
+                    	<label class="cause-days-togo label label-default pull-right">15 days to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" data-appear-progress-animation="80%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-                <div class="col-md-8 col-sm-8">
-                  <h3><a href="sermons.html">Prayers Collection</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
+              </li>
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Stop Child Labour</a></h3>
+                    <div class="progress-label">
+                    	30% Donated of <span>$110000</span>
+                    	<label class="cause-days-togo label label-default pull-right">3 months to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-danger" data-appear-progress-animation="30%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="post">
-              <div class="row">
-                <div class="col-md-4 col-sm-4">
-                 		<a href="sermons.html" class="album-cover">
-                          <span class="album-image"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></span>
-                   	</a>
-                     	<div class="label label-default album-count">16 videos</div>
-                     	<div class="label label-default album-count">6 audios</div>
+              </li>
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x500&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Africa's thirst</a></h3>
+                    <div class="progress-label">
+                    	55% Donated of <span>$6200000</span>
+                    	<label class="cause-days-togo label label-default pull-right">27 days to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" data-appear-progress-animation="55%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-                <div class="col-md-8 col-sm-8">
-                  <h3><a href="sermons.html">Prayers Collection</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
+              </li>
+              <li class="grid-item cause-item format-standard">
+                <div class="grid-item-inner">
+                  <a href="single-project.php" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                  <div class="grid-content">
+                    <h3><a href="single-project.php">Food to Africa</a></h3>
+                    <div class="progress-label">
+                    	65% Donated of <span>$100000</span>
+                    	<label class="cause-days-togo label label-default pull-right">25 days to go</label>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" data-appear-progress-animation="65%" data-appear-animation-delay="200"></div><!-- Upto 30% use class progress-bar-danger , upto 70% use class progress-bar-warning , afterwards use class progress-bar-success -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus...</p>
+                    <a href="#" class="btn btn-default donate-paypal" data-toggle="modal" data-target="#PaymentModal">Donate Now</a>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <ul class="pagination">
-              <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+              </li>
             </ul>
-          </div>
-          <!-- Start Sidebar -->
-          <div class="col-md-3 sidebar">
-            <div class="widget sidebar-widget">
-              <div class="sidebar-widget-title">
-                <h3>Sermon Categories</h3>
+            <!-- Payment Modal Window -->
+            <div class="modal fade" id="PaymentModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="PaymentModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Donate to: <span class="accent-color payment-to-cause"></span></h4>
+                  </div>
+                  <div class="modal-body">
+                  	<form>
+                    	<div class="row">
+                        	<div class="col-md-6">
+                                <label>How much would you like to donate?</label>
+                                <div class="input-group margin-20">
+                                    <span class="input-group-addon">$</span>
+                                    <select name="donation amount" class="form-control">
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="Custom">100+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        	<div class="col-md-6 custom-donate-amount">
+                                <label>Enter custom donation amount</label>
+                                <div class="input-group margin-20">
+                                    <span class="input-group-addon">$</span>
+                        			<input type="text" name="Custom Donation Amount" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    	<div class="row">
+                        	<div class="col-md-6">
+                        		<input type="text" name="fname" class="form-control" placeholder="First name (Required)">
+                            </div>
+                        	<div class="col-md-6">
+                        		<input type="text" name="lname" class="form-control" placeholder="Last name">
+                            </div>
+                      	</div>
+                    	<div class="row">
+                        	<div class="col-md-6">
+                        		<input type="email" name="email" class="form-control" placeholder="Your email (Required)">
+                            </div>
+                        	<div class="col-md-6">
+                        		<input type="phone" name="phone" class="form-control" placeholder="Your phone">
+                            </div>
+                       	</div>
+                    	<div class="row">
+                        	<div class="col-md-6">
+                        		<textarea rows="3" cols="5" class="form-control" placeholder="Your Address"></textarea>
+                            </div>
+                        	<div class="col-md-6">
+                        		<textarea rows="3" cols="5" class="form-control" placeholder="Additional Notes"></textarea>
+                            </div>
+                       	</div>
+                        <input type="submit" name="donate" class="btn btn-primary btn-lg btn-block" value="Donate Now">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <p class="small short">If you would prefer to call in your donation, please call 1800.785.876</p>
+                  </div>
+                </div>
               </div>
-              <ul>
-                <li><a href="#">Faith</a> (10)</li>
-                <li><a href="#">Missions</a> (12)</li>
-                <li><a href="#">Salvation</a> (34)</li>
-                <li><a href="#">Worship</a> (14)</li>
-              </ul>
             </div>
-            <div class="widget sidebar-widget">
-              <div class="sidebar-widget-title">
-                <h3>Sermon Speakers</h3>
-              </div>
-              <ul>
-                <li><a href="#">John Doe</a> (5)</li>
-                <li><a href="#">Mandra Patrick</a> (13)</li>
-                <li><a href="#">Sophie Chandol</a> (34)</li>
-                <li><a href="#">John Doe</a> (2)</li>
-              </ul>
-            </div>
-            <div class="widget sidebar-widget">
-              <div class="sidebar-widget-title">
-                <h3>Sermon Tags</h3>
-              </div>
-              <div class="tag-cloud"> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> </div>
-            </div>
+            <!-- Pagination -->
+            <ul class="pager pull-right">
+              <li><a href="#">&larr; Older</a></li>
+              <li><a href="#">Newer &rarr;</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -328,8 +412,8 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">

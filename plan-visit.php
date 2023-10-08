@@ -43,7 +43,7 @@
             <ul class="top-navigation hidden-sm hidden-xs">
               <li><a href="plan-visit.html">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -129,18 +129,18 @@
                 <li><a href="events.html">Events</a>
                   <ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="events-timeline.html">Events Timeline</a></li>
+                    <li><a href="bulletin.php">Events Timeline</a></li>
                     <li><a href="google-calendar.html">Google Calender</a></li>
                     <li><a href="events-calendar.html">Events Calender</a></li>
                     <li><a href="events-grid.html">Events Masonry Grid</a></li>
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.html">Sermons</a>
+                <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
-                    <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -149,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -162,20 +162,20 @@
                     <li><a href="gallery-masonry.html">Masonry Grid</a></li>
                   </ul>
                 </li>
-                <li><a href="blog-masonry.html">Blog</a>
+                <li><a href="devotions.php">Blog</a>
                   <ul class="dropdown">
-                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                    <li><a href="devotions.php">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="blog-timeline.html">Timeline Blog</a></li>
+                    <li><a href="church-history.php">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="church-projects.php">Causes Grid</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -187,14 +187,13 @@
   </header>
   <!-- End Site Header --> 
   <!-- Start Nav Backed Header -->
-  <div class="nav-backed-header parallax">
+  <div class="nav-backed-header parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li><a href="blog-masonry.html">Blog</a></li>
-            <li class="active">Post title</li>
+            <li class="active">Plan your visit</li>
           </ol>
         </div>
       </div>
@@ -205,11 +204,8 @@
   <div class="page-header">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-8">
-          <h1>Blog</h1>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis egestas rhoncus.</p>
+        <div class="col-md-12">
+          <h1>Plan your visit</h1>
         </div>
       </div>
     </div>
@@ -222,130 +218,64 @@
         <div class="row">
           <div class="col-md-9">
             <header class="single-post-header clearfix">
-              <div class="pull-right post-comments-count"> <a href="#comments"><i class="fa fa-comment"></i> 23</a> </div>
-              <h2 class="post-title">Post Title</h2>
+              <h2 class="post-title">Here is how you can reach us</h2>
             </header>
-            <article class="post-content"> <span class="post-meta meta-data"><span><i class="fa fa-calendar"></i> Posted on 20th Feb, 2014</span> <span><i class="fa fa-archive"></i> Categories: <a href="#">Uncategorized</a></span></span>
-              <div class="featured-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Aliquam pellentesque pellentesque turpis, ut bibendum sapien sollicitudin nec. Pellentesque posuere ornare placerat. Suspendisse potenti. Quisque massa tortor, tristique non tristique at, luctus sed massa. Donec libero eros, mollis ac fringilla eu, vestibulum sed lorem. Aenean aliquet tempor purus, sit amet ultricies neque bibendum venenatis. Suspendisse pulvinar massa sed odio semper mattis. Pellentesque vel nunc arcu, id rhoncus magna. Maecenas quis tempus ligula. Nunc ac tortor diam. Phasellus tincidunt rutrum diam, eget elementum lorem sagittis eget.</p>
-              <h3>Vivamus convallis</h3>
-              <p>Integer faucibus magna vitae augue suscipit a varius sem scelerisque. Nunc scelerisque tempus nunc in euismod. In sagittis congue sodales. Cras sit amet est nibh. Suspendisse eget ligula in nulla iaculis interdum nec a odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras massa odio, facilisis tincidunt blandit semper, lacinia semper dui. Donec viverra eros quis urna congue facilisis. Vivamus convallis imperdiet porta. Aliquam a nisi risus, vitae faucibus sem.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
-              </blockquote>
-              <div class="post-meta"> <i class="fa fa-tags"></i> <a href="#">Faith</a>, <a href="#">Heart</a>, <a href="#">Love</a>, <a href="#">Praise</a>, <a href="#">Sin</a>, <a href="#">Soul</a> </div>
-            </article>
-            <section class="post-comments" id="comments">
-              <h3><i class="fa fa-comment"></i> Comments (4)</h3>
-              <ol class="comments">
-                <li>
-                  <div class="post-comment-block">
-                    <div class="img-thumbnail"> <img src="http://placehold.it/40x40&amp;text=IMAGE+PLACEHOLDER" alt="avatar"> </div>
-                    <a href="#" class="btn btn-primary btn-xs pull-right">Reply</a>
-                    <h5>John Doe says</h5>
-                    <span class="meta-data">Nov 23, 2013 at 7:58 pm</span>
-                    <p>Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="post-comment-block">
-                    <div class="img-thumbnail"> <img src="http://placehold.it/40x40&amp;text=IMAGE+PLACEHOLDER" alt="avatar"> </div>
-                    <a href="#" class="btn btn-primary btn-xs pull-right">Reply</a>
-                    <h5>John Doe says</h5>
-                    <span class="meta-data">Nov 23, 2013 at 7:58 pm</span>
-                    <p>Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a.</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div class="post-comment-block">
-                        <div class="img-thumbnail"> <img src="http://placehold.it/40x40&amp;text=IMAGE+PLACEHOLDER" alt="avatar"> </div>
-                        <a href="#" class="btn btn-primary btn-xs pull-right">Reply</a>
-                        <h5>John Doe says</h5>
-                        <span class="meta-data">Nov 23, 2013 at 7:58 pm</span>
-                        <p>Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="post-comment-block">
-                        <div class="img-thumbnail"> <img src="http://placehold.it/40x40&amp;text=IMAGE+PLACEHOLDER" alt="avatar"> </div>
-                        <a href="#" class="btn btn-primary btn-xs pull-right">Reply</a>
-                        <h5>John Doe says</h5>
-                        <span class="meta-data">Nov 23, 2013 at 7:58 pm</span>
-                        <p>Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a.</p>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="post-comment-block">
-                    <div class="img-thumbnail"> <img src="http://placehold.it/40x40&amp;text=IMAGE+PLACEHOLDER" alt="avatar"> </div>
-                    <a href="#" class="btn btn-primary btn-xs pull-right">Reply</a>
-                    <h5>John Doe says</h5>
-                    <span class="meta-data">Nov 23, 2013 at 7:58 pm</span>
-                    <p>Curabitur nec nulla lectus, non hendrerit lorem. Quisque lorem risus, porttitor eget fringilla non, vehicula sed tortor. Proin enim quam, vulputate at lobortis quis, condimentum at justo. Phasellus nec nisi justo. Ut luctus sagittis nulla at dapibus. Aliquam ullamcorper commodo elit, quis ornare eros consectetur a.</p>
-                  </div>
-                </li>
-              </ol>
-            </section>
-            <section class="post-comment-form">
-              <h3><i class="fa fa-share"></i> Post a comment</h3>
-              <form>
-                <div class="row">
-                  <div class="form-group">
-                    <div class="col-md-4 col-sm-4">
-                      <input type="text" class="form-control input-lg" placeholder="Your name">
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                      <input type="email" class="form-control input-lg" placeholder="Your email">
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                      <input type="url" class="form-control input-lg" placeholder="Website (optional)">
-                    </div>
-                  </div>
+            <div class="post-content">
+              <p><span class="label label-danger">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
                 </div>
-                <div class="row">
-                  <div class="form-group">
-                    <div class="col-md-12">
-                      <textarea cols="8" rows="4" class="form-control input-lg" placeholder="Your comment"></textarea>
-                    </div>
-                  </div>
+                <div class="col-md-6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
                 </div>
-                <div class="row">
-                  <div class="form-group">
-                    <div class="col-md-12">
-                      <button type="submit" class="btn btn-primary btn-lg">Submit your comment</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </section>
+              </div>
+            </div>
           </div>
           <!-- Start Sidebar -->
           <div class="col-md-3 sidebar">
-            <div class="widget sidebar-widget search-form-widget">
-              <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Search Posts...">
-                <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><i class="fa fa-search fa-lg"></i></button>
-                </span> </div>
-            </div>
-            <div class="widget sidebar-widget">
+            <div class="widget-upcoming-events widget">
               <div class="sidebar-widget-title">
-                <h3>Post Categories</h3>
+                <h3>Upcoming Events</h3>
               </div>
               <ul>
-                <li><a href="#">Faith</a> (10)</li>
-                <li><a href="#">Missions</a> (12)</li>
-                <li><a href="#">Salvation</a> (34)</li>
-                <li><a href="#">Worship</a> (14)</li>
+                <li class="item event-item clearfix">
+                  <div class="event-date"> <span class="date">06</span> <span class="month">Aug</span> </div>
+                  <div class="event-detail">
+                    <h4><a href="#">Monday Prayer</a></h4>
+                    <span class="event-dayntime meta-data">Monday | 07:00 AM</span> </div>
+                </li>
+                <li class="item event-item clearfix">
+                  <div class="event-date"> <span class="date">28</span> <span class="month">Aug</span> </div>
+                  <div class="event-detail">
+                    <h4><a href="#">Staff members meet</a></h4>
+                    <span class="event-dayntime meta-data">Monday | 01:00 PM</span> </div>
+                </li>
+                <li class="item event-item clearfix">
+                  <div class="event-date"> <span class="date">25</span> <span class="month">Sep</span> </div>
+                  <div class="event-detail">
+                    <h4><a href="#">Evening Prayer</a></h4>
+                    <span class="event-dayntime meta-data">Friday | 06:00 PM</span> </div>
+                </li>
               </ul>
             </div>
-            <div class="widget sidebar-widget">
+            <!-- Recent Posts Widget -->
+            <div class="widget-recent-posts widget">
               <div class="sidebar-widget-title">
-                <h3>Post Tags</h3>
+                <h3>Recent Posts</h3>
               </div>
-              <div class="tag-cloud"> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> </div>
+              <ul>
+                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
+                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
+                </li>
+                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
+                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti atque corrupti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
+                </li>
+                <li class="clearfix"> <a href="#" class="media-box post-image"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a>
+                  <div class="widget-blog-content"><a href="#">Voluptatum deleniti</a> <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -369,8 +299,8 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">

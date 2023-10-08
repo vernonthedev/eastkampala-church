@@ -41,9 +41,9 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.html">Plan your visit</a></li>
+              <li><a href="plan-visit.php">Plan your visit</a></li>
               <li><a href="events-calendar.html">Calendar</a></li>
-              <li><a href="donate.html">Donate Now</a></li>
+              <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -129,18 +129,18 @@
                 <li><a href="events.html">Events</a>
                   <ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="events-timeline.html">Events Timeline</a></li>
+                    <li><a href="bulletin.php">Events Timeline</a></li>
                     <li><a href="google-calendar.html">Google Calender</a></li>
                     <li><a href="events-calendar.html">Events Calender</a></li>
                     <li><a href="events-grid.html">Events Masonry Grid</a></li>
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.html">Sermons</a>
+                <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.html">Sermon Albums</a></li>
-                    <li><a href="sermons.html">Sermons Archive</a></li>
-                    <li><a href="single-sermon.html">Single Sermon</a></li>
+                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-details.php">Single Sermon</a></li>
                   </ul>
                 </li>
                 <li><a href="gallery-2cols-pagination.html">Gallery</a>
@@ -149,7 +149,7 @@
                       <ul class="dropdown">
                         <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
                         <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-pagination.html">4 Columns</a></li>
+                        <li><a href="gallery.php">4 Columns</a></li>
                       </ul>
                     </li>
                     <li><a href="gallery-2cols-filter.html">With Filter</a>
@@ -162,20 +162,20 @@
                     <li><a href="gallery-masonry.html">Masonry Grid</a></li>
                   </ul>
                 </li>
-                <li><a href="blog-masonry.html">Blog</a>
+                <li><a href="devotions.php">Blog</a>
                   <ul class="dropdown">
-                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                    <li><a href="devotions.php">Masonry Blog</a></li>
                     <li><a href="blog-full-width.html">Full Width Blog</a></li>
                     <li><a href="blog-timeline.html">Timeline Blog</a></li>
                     <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="blog-post.html">Single Blog Post</a></li>
+                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
                   </ul>
                 </li>
                 <li><a href="causes.html">Causes</a>
                   <ul class="dropdown">
                     <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="causes-grid.html">Causes Grid</a></li>
-                    <li><a href="single-cause.html">Single Cause</a></li>
+                    <li><a href="church-projects.php">Causes Grid</a></li>
+                    <li><a href="single-project.php">Single Cause</a></li>
                   </ul>
               	</li>
               </ul>
@@ -220,7 +220,7 @@
               <div class="timeline-badge">Mar<span>2014</span></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title"><a href="blog-post.html">A sample post title</a></h3>
+                  <h3 class="timeline-title"><a href="daily-devotion.php">A sample post title</a></h3>
                   <p><small class="text-muted"><i class="fa fa-calendar"></i> 28th March, 2014</small></p>
                 </div>
                 <div class="timeline-body">
@@ -231,7 +231,7 @@
             <li class="timeline-inverted">
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title"><a href="blog-post.html">A sample post title</a></h3>
+                  <h3 class="timeline-title"><a href="daily-devotion.php">A sample post title</a></h3>
                   <p><small class="text-muted"><i class="fa fa-calendar"></i> 28th March, 2014</small></p>
                 </div>
                 <div class="timeline-body">
@@ -243,7 +243,7 @@
               <div class="timeline-badge">Feb<span>2014</span></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title"><a href="blog-post.html">A sample post title</a></h3>
+                  <h3 class="timeline-title"><a href="daily-devotion.php">A sample post title</a></h3>
                   <p><small class="text-muted"><i class="fa fa-calendar"></i> 28th March, 2014</small></p>
                 </div>
                 <div class="timeline-body">
@@ -254,7 +254,7 @@
             <li class="timeline-inverted">
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title"><a href="blog-post.html">A sample post title</a></h3>
+                  <h3 class="timeline-title"><a href="daily-devotion.php">A sample post title</a></h3>
                   <p><small class="text-muted"><i class="fa fa-calendar"></i> 28th March, 2014</small></p>
                 </div>
                 <div class="timeline-body">
@@ -283,8 +283,8 @@
             <li><a href="index.html">Church Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">All Events</a></li>
-            <li><a href="sermons.html">Sermons Archive</a></li>
-            <li><a href="blog-masonry.html">Our Blog</a></li>
+            <li><a href="sermons.php">Sermons Archive</a></li>
+            <li><a href="devotions.php">Our Blog</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">
