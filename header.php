@@ -1,4 +1,6 @@
-  <!-- Start Site Header -->
+
+
+<!-- Start Site Header -->
   <header class="site-header">
     <div class="topbar">
       <div class="container">
@@ -21,17 +23,20 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="index.php">Home</a>
+                <li><a href="index.php"><ion-icon name="home"></ion-icon>Home</a>
+                    <ul class="dropdown">
+                        <li><a href="livestream.php"> <ion-icon name="videocam"></ion-icon>Livestream</a></li>
+                    </ul>
                 </li>
-                <li><a href="about.php">About Us</a>
+                <li><a href="about.php"><ion-icon name="megaphone"></ion-icon>About Us</a>
                   <ul class="dropdown">
                     <li><a href="about.php">Overview</a></li>
-                    <li><a href="contact.php">Where we meet</a></li>
-                    <li><a href="our-staff.php">Our Staff</a></li>
+                    <li><a href="church-history.php.php">Our History</a></li>
+                    <li><a href="our-staff.php">Our Pastors</a></li>
                 	<li><a href="contact.php">Contact</a></li>
                   </ul>
                 </li>
-                <li class="megamenu"><a href="shortcodes.html">Ministry</a>
+                <li class="megamenu"><a href="shortcodes.html"><ion-icon name="book"></ion-icon>Ministry</a>
                   <ul class="dropdown">
                     <li>
                       <div class="megamenu-container container">
@@ -45,7 +50,7 @@
                               <li><a href="mens-ministry.php">Men's Ministry</a></li>
                               <li><a href="childrens-ministry.php">Children's Ministry</a></li>
                               <li><a href="youth-ministry.php">Senior Youth Ministry</a></li>
-                              <li><a href="prayer-requests.php">Prayer Requests</a></li>
+                              <li><a href="#" data-bs-toggle="modal" data-bs-target="#prayerModal">Prayer Requests</a></li>
                             </ul>
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-clock-o"></i> Upcoming Events</span>
@@ -67,23 +72,24 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="events.php">Events</a>
+                <li><a href="events.php"><ion-icon name="notifications"></ion-icon>Events</a>
                   <ul class="dropdown">
                     <li><a href="events.php">Events Organised</a></li>
                     <li><a href="announcements.php">Announcements</a></li>
                     <li><a href="bulletin.php">Sabbath Bulletin</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.php">Sermons</a>
+                <li><a href="sermons.php"><ion-icon name="file-tray-full"></ion-icon>Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermons.php">Sermons Archive</a></li>
                       <li><a href="sermons.php">Daily Devotions</a></li>
                       <li><a href="sermons.php">Inverse Devotions</a></li>
                       <li><a href="sermons.php">Adult Bible Lesson</a></li>
                       <li><a href="sermons.php">Children's Lesson</a></li>
+
                   </ul>
                 </li>
-                <li><a href="gallery.php">Gallery</a>
+                <li><a href="gallery.php"><ion-icon name="image"></ion-icon>Gallery</a>
                   <ul class="dropdown">
                     <li><a href="gallery.php">Church Images</a></li>
                       <li><a href="gallery.php">Senior Youth</a></li>
@@ -91,13 +97,13 @@
                       <li><a href="gallery.php">Ministry</a></li>
                   </ul>
                 </li>
-                <li><a href="gc.php">General Conference</a>
-                  <ul class="dropdown">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Fundamental Beliefs</a></li>
-                    <li><a href="#">Church History</a></li>
-                  </ul>
-              	</li>
+                  <li><a href="gc.php"><ion-icon name="people-circle"></ion-icon>G-C</a>
+                      <ul class="dropdown">
+                          <li><a href="#">About General Conference</a></li>
+                          <li><a href="#">Fundamental Beliefs</a></li>
+                          <li><a href="#">Church History</a></li>
+                      </ul>
+                  </li>
               </ul>
             </nav>
           </div>
