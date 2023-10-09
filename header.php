@@ -4,12 +4,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-8">
-            <h1 class="logo"> <a href="index.html"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="index.html"><img src="images/east%20kampala%20logo.png" alt="East Kampala SDA Logo" width="120px"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
               <li><a href="plan-visit.php">Plan your visit</a></li>
-              <li><a href="events-calendar.html">Calendar</a></li>
               <li><a href="donate.php">Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
@@ -24,15 +23,15 @@
               <ul class="sf-menu">
                 <li><a href="index.php">Home</a>
                 </li>
-                <li><a href="about.html">About Us</a>
+                <li><a href="about.php">About Us</a>
                   <ul class="dropdown">
-                    <li><a href="about.html">Overview</a></li>
-                    <li><a href="contact.html">Where we meet</a></li>
-                    <li><a href="our-staff.html">Our Staff</a></li>
-                	<li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.php">Overview</a></li>
+                    <li><a href="contact.php">Where we meet</a></li>
+                    <li><a href="our-staff.php">Our Staff</a></li>
+                	<li><a href="contact.php">Contact</a></li>
                   </ul>
                 </li>
-                <li class="megamenu"><a href="shortcodes.html">Mega Menu</a>
+                <li class="megamenu"><a href="shortcodes.html">Ministry</a>
                   <ul class="dropdown">
                     <li>
                       <div class="megamenu-container container">
@@ -42,84 +41,61 @@
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-pagelines"></i> Our Ministries</span>
                             <ul class="sub-menu">
-                              <li><a href="ministry.html">Women's Ministry</a></li>
-                              <li><a href="ministry.html">Men's Ministry</a></li>
-                              <li><a href="ministry.html">Children's Ministry</a></li>
-                              <li><a href="ministry.html">Youth Ministry</a></li>
-                              <li><a href="ministry.html">Prayer Requests</a></li>
+                              <li><a href="womens-ministry.php">Women's Ministry</a></li>
+                              <li><a href="mens-ministry.php">Men's Ministry</a></li>
+                              <li><a href="childrens-ministry.php">Children's Ministry</a></li>
+                              <li><a href="youth-ministry.php">Senior Youth Ministry</a></li>
+                              <li><a href="prayer-requests.php">Prayer Requests</a></li>
                             </ul>
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-clock-o"></i> Upcoming Events</span>
                             <ul class="sub-menu">
-                              <li><a href="single-event.html">Monday Prayer</a> <span class="meta-data">Monday | 06:00 PM</span> </li>
-                              <li><a href="single-event.html">Staff members meet</a> <span class="meta-data">Tuesday | 08:00 AM</span> </li>
-                              <li><a href="single-event.html">Evening Prayer</a> <span class="meta-data">Friday | 07:00 PM</span> </li>
+                              <li><a href="event-details.php">Monday Prayer</a> <span class="meta-data">Monday | 06:00 PM</span> </li>
+                              <li><a href="event-details.php">Staff members meet</a> <span class="meta-data">Tuesday | 08:00 AM</span> </li>
+                              <li><a href="event-details.php">Evening Prayer</a> <span class="meta-data">Friday | 07:00 PM</span> </li>
                             </ul>
                           </div>
-                          <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-cog"></i> Features</span>
-                            <ul class="sub-menu">
-                              <li><a href="shortcodes.html">Shortcodes</a></li>
-                              <li><a href="typography.html">Typography</a></li>
-                    			<li><a href="shop.html">Shop <span class="label label-danger">New</span></a></li>
-                    			<li><a href="shop-sidebar.html">Shop Sidebar <span class="label label-danger">New</span></a></li>
-                    			<li><a href="shop-product.html">Single Product <span class="label label-danger">New</span></a></li>
-                            </ul>
-                          </div>
+                            <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-american-sign-language-interpreting"></i> Counselling Services</span>
+                                <ul class="sub-menu">
+                                    <li><a href="event-details.php"> Personal Counselling <span class="meta-data">Login Here to Chat</span></a> </li>
+                                    <li><a href="event-details.php">Prayer Band</a></li>
+                                    <li><a href="event-details.php">Family and Marriage</a></li>
+                                </ul>
+                            </div>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </li>
-                <li><a href="events.html">Events</a>
+                <li><a href="events.php">Events</a>
                   <ul class="dropdown">
-                    <li><a href="events.html">Events Listing</a></li>
-                    <li><a href="bulletin.php">Events Timeline</a></li>
-                    <li><a href="google-calendar.html">Google Calender</a></li>
-                    <li><a href="events-calendar.html">Events Calender</a></li>
-                    <li><a href="events-grid.html">Events Masonry Grid</a></li>
-                    <li><a href="single-event.html">Single Event</a></li>
+                    <li><a href="events.php">Events Organised</a></li>
+                    <li><a href="announcements.php">Announcements</a></li>
+                    <li><a href="bulletin.php">Sabbath Bulletin</a></li>
                   </ul>
                 </li>
                 <li><a href="sermons.php">Sermons</a>
                   <ul class="dropdown">
-                    <li><a href="sermon-albums.html">Sermon Albums</a></li>
                     <li><a href="sermons.php">Sermons Archive</a></li>
-                    <li><a href="sermon-details.php">Single Sermon</a></li>
+                      <li><a href="sermons.php">Daily Devotions</a></li>
+                      <li><a href="sermons.php">Inverse Devotions</a></li>
+                      <li><a href="sermons.php">Adult Bible Lesson</a></li>
+                      <li><a href="sermons.php">Children's Lesson</a></li>
                   </ul>
                 </li>
-                <li><a href="gallery-2cols-pagination.html">Gallery</a>
+                <li><a href="gallery.php">Gallery</a>
                   <ul class="dropdown">
-                    <li><a href="gallery-2cols-pagination.html">With Pagination</a>
-                      <ul class="dropdown">
-                        <li><a href="gallery-2cols-pagination.html">2 Columns</a></li>
-                        <li><a href="gallery-3cols-pagination.html">3 Columns</a></li>
-                        <li><a href="gallery.php">4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="gallery-2cols-filter.html">With Filter</a>
-                      <ul class="dropdown">
-                        <li><a href="gallery-2cols-filter.html">2 Columns</a></li>
-                        <li><a href="gallery-3cols-filter.html">3 Columns</a></li>
-                        <li><a href="gallery-4cols-filter.html">4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="gallery-masonry.html">Masonry Grid</a></li>
+                    <li><a href="gallery.php">Church Images</a></li>
+                      <li><a href="gallery.php">Senior Youth</a></li>
+                      <li><a href="gallery.php">Outreach</a></li>
+                      <li><a href="gallery.php">Ministry</a></li>
                   </ul>
                 </li>
-                <li><a href="devotions.php">Blog</a>
+                <li><a href="gc.php">General Conference</a>
                   <ul class="dropdown">
-                    <li><a href="devotions.php">Masonry Blog</a></li>
-                    <li><a href="blog-full-width.html">Full Width Blog</a></li>
-                    <li><a href="church-history.php">Timeline Blog</a></li>
-                    <li><a href="blog-medium-thumbnails.html">Medium Thumbnails</a></li>
-                    <li><a href="daily-devotion.php">Single Blog Post</a></li>
-                  </ul>
-                </li>
-                <li><a href="causes.html">Causes</a>
-                  <ul class="dropdown">
-                    <li><a href="causes.html">Causes List</a></li>
-                    <li><a href="church-projects.php">Causes Grid</a></li>
-                    <li><a href="single-project.php">Single Cause</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Fundamental Beliefs</a></li>
+                    <li><a href="#">Church History</a></li>
                   </ul>
               	</li>
               </ul>

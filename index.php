@@ -32,42 +32,42 @@
 <![endif]-->
 <div class="body">
 <?php include 'header.php';?>
-  <!-- Start Hero Slider -->
-  <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
-    <ul class="slides">
-      <li class=" parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
-      <li class="parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
-    </ul>
-  </div>
-  <!-- End Hero Slider -->
-  <!-- Start Notice Bar -->
-  <div class="notice-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">Next</span> <strong>Upcoming Event</strong> </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-event-title">
-          <h5><a href="single-event.html">Sountheast Asia Meet</a></h5>
-          <span class="meta-data">13th July, 2015</span> </div>
-        <div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="July 13, 2018">
-          <div class="timer-col"> <span id="days"></span> <span class="timer-type">days</span> </div>
-          <div class="timer-col"> <span id="hours"></span> <span class="timer-type">hrs</span> </div>
-          <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">mins</span> </div>
-          <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">secs</span> </div>
-        </div>
-        <div class="col-md-2 col-sm-6 hidden-xs"> <a href="events.html" class="btn btn-primary btn-lg btn-block">All Events</a> </div>
-      </div>
+    <!-- Start Hero Slider -->
+    <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
+        <ul class="slides">
+            <li class=" parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
+            <li class="parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
+        </ul>
     </div>
-  </div>
-  <!-- End Notice Bar -->
-  <!-- Start Content -->
+    <!-- End Hero Slider -->
+    <!-- Start Notice Bar -->
+    <div class="notice-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">Next</span> <strong>Upcoming Event</strong> </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-event-title">
+                    <h5><a href="single-event.html">Sountheast Asia Meet</a></h5>
+                    <span class="meta-data">13th July, 2015</span> </div>
+                <div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="July 13, 2018">
+                    <div class="timer-col"> <span id="days"></span> <span class="timer-type">days</span> </div>
+                    <div class="timer-col"> <span id="hours"></span> <span class="timer-type">hrs</span> </div>
+                    <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">mins</span> </div>
+                    <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">secs</span> </div>
+                </div>
+                <div class="col-md-2 col-sm-6 hidden-xs"> <a href="events.html" class="btn btn-primary btn-lg btn-block">All Events</a> </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Notice Bar -->
+    <!-- Start Content -->
   <div class="main" role="main">
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
           <!-- Start Featured Blocks -->
           <div class="featured-blocks clearfix">
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="our-staff.html" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Our Pastors</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="about.html" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="our-staff.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Our Pastors</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="about.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
             <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
           </div>
           <!-- End Featured Blocks -->
