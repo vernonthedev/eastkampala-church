@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="no-js">
+<html class="no-js" lang="en">
 <head>
 <!-- Basic Page Needs
   ================================================== -->
