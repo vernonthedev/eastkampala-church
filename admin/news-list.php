@@ -9,7 +9,7 @@ $rows = $run_query->fetchAll();
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Admin, News List | EKC SDA Church</title>
+    <title>Admin, Devotions List | EKC SDA Church</title>
     <?php include'style.php'; ?>
 </head>
 
@@ -30,12 +30,12 @@ $rows = $run_query->fetchAll();
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0 font-size-18">News List</h4>
+                                    <h4 class="mb-sm-0 font-size-18">Devotions List</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
-                                            <li class="breadcrumb-item active">News List</li>
+                                            <li class="breadcrumb-item active">Devotions List</li>
                                         </ol>
                                     </div>
 
@@ -55,12 +55,12 @@ $rows = $run_query->fetchAll();
                                             <table class='table table-borderless table-dark  table-editable table-nowrap align-middle table-edits'>
                                                 <thead>
                                                     <tr>
-                                                        <th>News ID</th>
-                                                        <th>News Title</th>
-                                                        <th>News Date</th>
-                                                        <th>News Place</th>
-                                                        <th>News Content</th>
-                                                        <th>News Image</th>
+                                                        <th>Devotions ID</th>
+                                                        <th>Devotions Title</th>
+                                                        <th>Devotions Date</th>
+                                                        <th>Devotions Speaker</th>
+                                                        <th>Devotions Content</th>
+                                                        <th>Devotions Image</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>

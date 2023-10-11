@@ -62,7 +62,7 @@ include'config.php';
                                                     </div>
 
                                                     <div class="mb-3">
-                                                        <label for="example-text-input" class="form-label">Devotion Place:</label>
+                                                        <label for="example-text-input" class="form-label">Devotion Speaker:</label>
                                                         <input class="form-control" type="text"  id="example-text-input" name="n_place" placeholder="Devotion Place">
                                                     </div>
 

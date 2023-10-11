@@ -82,19 +82,16 @@
                 <li><a href="sermons.php"><ion-icon name="file-tray-full"></ion-icon>Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermons.php">Sermons Archive</a></li>
-                      <li><a href="sermons.php">Daily Devotions</a></li>
-                      <li><a href="sermons.php">Inverse Devotions</a></li>
-                      <li><a href="sermons.php">Adult Bible Lesson</a></li>
-                      <li><a href="sermons.php">Children's Lesson</a></li>
+                      <li><a href="daily-devotion.php">Daily Devotions</a></li>
+                      <li><a href="inverse-devotions.php">Inverse Devotions</a></li>
+                      <li><a href="adult-lesson.php">Adult Bible Lesson</a></li>
+                      <li><a href="https://www.gracelink.net/kindergarten">Children's Lesson</a></li>
 
                   </ul>
                 </li>
                 <li><a href="gallery.php"><ion-icon name="image"></ion-icon>Gallery</a>
                   <ul class="dropdown">
                     <li><a href="gallery.php">Church Images</a></li>
-                      <li><a href="gallery.php">Senior Youth</a></li>
-                      <li><a href="gallery.php">Outreach</a></li>
-                      <li><a href="gallery.php">Ministry</a></li>
                   </ul>
                 </li>
                   <li><a href="gc.php"><ion-icon name="people-circle"></ion-icon>G-C</a>
