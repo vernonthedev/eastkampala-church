@@ -33,9 +33,9 @@
             </div>
             <div class="copyrights-col-right col-md-6 col-sm-6">
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/sdaeastkampala/" target="_blank"><i class="fa fa-facebook"></i>
-                    <a href="https://www.youtube.com/@eastkampalasdachurch" target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a href="livestream.php"><i class="fa fa-rss"></i></a> </div>
+                    <a href="https://www.facebook.com/sdaeastkampala/" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon>
+                    <a href="https://www.youtube.com/@eastkampalasdachurch" target="_blank"><ion-icon name="logo-youtube" size="large"></ion-icon>
+                    <a href="livestream.php"><ion-icon name="videocam" size="large"></ion-icon></a> </div>
             </div>
         </div>
     </div>

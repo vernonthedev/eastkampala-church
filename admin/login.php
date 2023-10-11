@@ -5,7 +5,7 @@ session_start();
 <!doctype html>
 <html lang="en">
 <head>
-        <title>Log In, Admin | EKC SDA Churche</title>
+        <title>Log In, Admin | EKC SDA Church</title>
 <?php include'style.php'; ?>
 
     </head>
@@ -35,8 +35,7 @@ session_start();
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-xl-7">
                                     <div class="signin_div text-center">
-                                        <img src="../assets/img/sda%20logo%20main.png" width="100px">
-                                        <h2 class="text-white">East Kampala SDA Church</h2>
+                                        <img src="../images/east%20kampala%20logo.png" width="100%">
                                     </div>
                                 </div>
                             </div>
@@ -97,21 +96,20 @@ session_start();
 
 <?php
 if(isset($_POST['admin_login'])){
-
     $username = $_POST['user_name'];
     $userpassword = $_POST['user_password'];
 
     $view_data = "SELECT * FROM admin WHERE admin_name = ? AND admin_password = ?";
-        $result = $conn->prepare($view_data);
-        $result->execute([$username, $userpassword]);
-        if ($result){
-            $_SESSION['admin_name'] = $_POST['user_name'];
-            echo '<script> window.location.href = "./";</script>';
-        }
-        else{
-            echo '<script>alert("Login Failed.")</script>';
-        }
+    $result = $conn->prepare($view_data);
+    $result->execute([$username, $userpassword]);
 
+    // Check if the query returned any rows
+    if ($result->rowCount() > 0) {
+        $_SESSION['admin_name'] = $_POST['user_name'];
+        echo '<script> window.location.href = "./";</script>';
+    } else {
+        echo '<script>alert("Login Failed.")</script>';
+    }
 }
 
 ?>
