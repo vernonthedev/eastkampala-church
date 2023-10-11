@@ -31,7 +31,7 @@
                 <li><a href="about.php"><ion-icon name="megaphone"></ion-icon>About Us</a>
                   <ul class="dropdown">
                     <li><a href="about.php">Overview</a></li>
-                    <li><a href="church-history.php.php">Our History</a></li>
+                    <li><a href="church-history.php">Our History</a></li>
                     <li><a href="our-staff.php">Our Pastors</a></li>
                 	<li><a href="contact.php">Contact</a></li>
                   </ul>

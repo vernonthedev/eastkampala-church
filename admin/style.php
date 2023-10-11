@@ -2,7 +2,7 @@
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="vernonthedev" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/img/sda%20logo%20black.png">
+        <link rel="shortcut icon" href="../images/sda%20logo%20black.png">
 
         <!-- plugin css -->
         <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
