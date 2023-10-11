@@ -1,10 +1,20 @@
 <!DOCTYPE HTML>
 <html class="no-js" lang="en">
-<?php include "head.php";?>
+<?php
+include "head.php";
+include "config.php";
+?>
+
+<?php
+include 'config.php';
+
+$sql = "SELECT * FROM event_list ORDER BY event_id DESC";
+$run_query = $conn->prepare($sql);
+$run_query->execute();
+$rows = $run_query->fetchAll();
+?>
 <body>
-<!--[if lt IE 7]>
-	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-<![endif]-->
+
 <div class="body">
   <!-- Start Site Header -->
   <?php include "header.php";?>
@@ -15,7 +25,7 @@
       <div class="row">
         <div class="col-md-12">
           <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="active">Events</li>
           </ol>
         </div>
@@ -41,78 +51,31 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="grid-holder col-3 events-grid">
+
+                <?php
+                //loop through the retrieved programs
+                foreach($rows as $row){
+                    //formating the date into human-readable format
+                    $eventDate = date("l, F j, Y", strtotime($row->event_date));
+                ?>
+
               <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
+                <div class="grid-item-inner"> <a href="event-details.php?id=<?php echo $row->event_id; ?>" class="media-box"> <img src="admin/events/<?php echo $row->event_img; ?>" width="600" height="600"  alt="<?php echo $row->event_title; ?>"> </a>
                   <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <h3><a href="event-details.php?id=<?php echo $row->event_id; ?>"><?php echo $row->event_title; ?></a></h3>
+                    <p><?php echo $row->event_content; ?></p>
                   </div>
                   <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
+                    <li><i class="fa fa-calendar"></i><?php echo $eventDate?></li>
+                    <li><i class="fa fa-map-marker"></i> <?php echo $row->event_place?></li>
                   </ul>
                 </div>
               </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/800x450&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/800x450&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="grid-item format-standard">
-                <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a>
-                  <div class="grid-content">
-                    <h3><a href="single-event.html">Evening Prayer</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  </div>
-                  <ul class="info-table">
-                    <li><i class="fa fa-calendar"></i> Monday | 7:00 AM - 1:00 PM</li>
-                    <li><i class="fa fa-map-marker"></i> 341 Magetic state, US</li>
-                  </ul>
-                </div>
-              </li>
+                    <?php
+                }
+                ?>
+
+
             </ul>
             <ul class="pager pull-right">
               <li><a href="#">&larr; Older</a></li>
@@ -128,14 +91,6 @@
   <!-- End Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
-<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
-<script src="js/helper-plugins.js"></script> <!-- Plugins -->
-<script src="js/bootstrap.js"></script> <!-- UI -->
-<script src="js/waypoints.js"></script> <!-- Waypoints -->
-<script src="plugins/mediaelement/mediaelement-and-player.min.js"></script> <!-- MediaElements -->
-<script src="js/init.js"></script> <!-- All Scripts -->
-<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
-<script src="plugins/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer -->
+<?php include "script.php";?>
 </body>
 </html>

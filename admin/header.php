@@ -70,13 +70,13 @@ if (!isset($_SESSION['admin_name'])) {
                     <a href="index.php"> <i data-feather="home"></i> <span data-key="t-dashboard">Dashboard</span> </a>
                 </li>
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow"> <i data-feather="box"></i> <span data-key="t-apps">Church Programs</span> </a>
+                    <a href="javascript: void(0);" class="has-arrow"> <i data-feather="box"></i> <span data-key="t-apps">Church Events</span> </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li>
-                            <a href="event-list.php"> <span data-key="t-calendar">All Programs</span> </a>
+                            <a href="event-list.php"> <span data-key="t-calendar">All Events</span> </a>
                         </li>
                         <li>
-                            <a href="add-event.php"> <span data-key="t-chat">Add Program</span> </a>
+                            <a href="add-event.php"> <span data-key="t-chat">Add Events</span> </a>
                         </li>
                     </ul>
                 </li>
