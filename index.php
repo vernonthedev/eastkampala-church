@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html class="no-js">
-<?php include "head.php";?>
+<?php
+include "head.php";
+include "config.php";
+?>
 <body>
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -10,8 +13,17 @@
     <!-- Start Hero Slider -->
     <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
         <ul class="slides">
-            <li class=" parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
-            <li class="parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);"></li>
+            <?php
+            $view_banners = "SELECT * FROM banner_slider";
+            $stmt = $conn->prepare($view_banners);
+            $stmt->execute();
+            $rows = $stmt->fetchAll();
+
+            foreach($rows as $row){
+            ?>
+            <li class=" parallax" style="background-image:url(admin/banner/<?php echo $row->banner_img;?>);"></li><?php
+            }
+            ?>
         </ul>
     </div>
     <!-- End Hero Slider -->
@@ -40,9 +52,26 @@
         <div class="row">
           <!-- Start Featured Blocks -->
           <div class="featured-blocks clearfix">
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="our-staff.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Our Pastors</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="about.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.php" class="img-thumbnail"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
+              <?php
+              // Select the latest member by ordering the results by a column (e.g., member_id) in descending order
+              $view_data = "SELECT * FROM member_list ORDER BY member_id DESC LIMIT 1";
+              $run_query = $conn->prepare($view_data);
+              $run_query->execute();
+              $rows = $run_query->fetchAll();
+              foreach ($rows as $row) {
+                  ?>
+                  <div class="col-md-4 col-sm-4 featured-block">
+                      <a href="our-staff.php" class="img-thumbnail">
+                          <img src="admin/team-images/<?php echo $row->member_img; ?>" alt="staff">
+                          <strong>Our Pastors</strong>
+                          <span class="more">read more</span>
+                      </a>
+                  </div>
+              <?php } ?>
+
+
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="about.php" class="img-thumbnail"> <img src="images/SpiritualGrowth-2.jpg" width="600" height="200" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.php" class="img-thumbnail"> <img src="images/sermon.jpg" width="600" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
           </div>
           <!-- End Featured Blocks -->
         </div>
@@ -55,33 +84,35 @@
               </header>
               <section class="listing-cont">
                 <ul>
+                    <?php
+                    include 'config.php';
+
+                    // Select the latest three events by event_id in descending order
+                    $sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
+                    $run_query = $conn->prepare($sql);
+                    $run_query->execute();
+                    $rows = $run_query->fetchAll();
+
+                    //loop through the retrieved programs
+                    foreach($rows as $row){
+                    //formating the date into human-readable format
+                    $eventDate = date("l, F j, Y", strtotime($row->event_date));
+                    ?>
+
                   <li class="item event-item">
-                    <div class="event-date"> <span class="date">06</span> <span class="month">Aug</span> </div>
+                    <div class="event-date"> <span class="date"><ion-icon name="calendar-sharp" size="large"></ion-icon></span> </div>
                     <div class="event-detail">
-                      <h4><a href="single-event.html">Monday Prayer</a></h4>
-                      <span class="event-dayntime meta-data">Monday | 07:00 AM</span> </div>
+                      <h4><a href="event-details.php?id=<?php echo $row->event_id; ?>"><?php echo $row->event_title;?></a></h4>
+                      <span class="event-dayntime meta-data"><?php echo $eventDate;?></span> </div>
                     <div class="to-event-url">
-                      <div><a href="single-event.html" class="btn btn-default btn-sm">Details</a></div>
+                      <div><a href="event-details.php?id=<?php echo $row->event_id; ?>" class="btn btn-default btn-sm">Details</a></div>
                     </div>
                   </li>
-                  <li class="item event-item">
-                    <div class="event-date"> <span class="date">28</span> <span class="month">Aug</span> </div>
-                    <div class="event-detail">
-                      <h4><a href="single-event.html">Staff members meet</a></h4>
-                      <span class="event-dayntime meta-data">Monday | 01:00 PM</span> </div>
-                    <div class="to-event-url">
-                      <div><a href="single-event.html" class="btn btn-default btn-sm">Details</a></div>
-                    </div>
-                  </li>
-                  <li class="item event-item">
-                    <div class="event-date"> <span class="date">25</span> <span class="month">Sep</span> </div>
-                    <div class="event-detail">
-                      <h4><a href="single-event.html">Evening Prayer</a></h4>
-                      <span class="event-dayntime meta-data">Friday | 06:00 PM</span> </div>
-                    <div class="to-event-url">
-                      <div><a href="single-event.html" class="btn btn-default btn-sm">Details</a></div>
-                    </div>
-                  </li>
+
+                        <?php
+                    }
+                    ?>
+
                 </ul>
               </section>
             </div>
@@ -89,7 +120,7 @@
             <!-- Latest News -->
             <div class="listing post-listing">
               <header class="listing-header">
-                <h3>Latest News</h3>
+                <h3>Latest Announcements</h3>
               </header>
               <section class="listing-cont">
                 <ul>
@@ -142,8 +173,8 @@
 
                               <li class="isermons-dl-files">
                                   <ion-icon name="logo-youtube" size="large" aria-label="Favorite"></ion-icon>
-                                  <ion-icon name="mic" size="large"></ion-icon>
-                                  <ion-icon name="cloud-download" size="large"></ion-icon>
+                                  <ion-icon name="mic-outline" size="large"></ion-icon>
+                                  <ion-icon name="cloud-download-outline" size="large"></ion-icon>
                               </li>
 
                           </ul>

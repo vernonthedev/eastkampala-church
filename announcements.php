@@ -2,9 +2,6 @@
 <html class="no-js">
 <?php include "head.php";?>
 <body>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-<![endif]-->
 <div class="body">
     <!-- Start Site Header -->
     <?php include "header.php";?>
@@ -15,8 +12,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Events</li>
+                        <li><a href="index.php">Home</a></li>
+                        <li class="active">Announcements</li>
                     </ol>
                 </div>
             </div>
@@ -28,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Events Timeline</h1>
+                    <h1>Announcements</h1>
                 </div>
             </div>
         </div>
