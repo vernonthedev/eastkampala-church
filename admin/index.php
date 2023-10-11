@@ -88,9 +88,9 @@ session_start();
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-12">
-                                                <span class="text-muted mb-3 lh-1 d-block text-truncate">Total News</span>
+                                                <span class="text-muted mb-3 lh-1 d-block text-truncate">Total Annoucements</span>
                                                 <?php
-                                                $query = "SELECT * FROM news";
+                                                $query = "SELECT * FROM announcements";
 
                                                 // Execute the query and store the result set
                                                 $result = $conn->prepare($query);

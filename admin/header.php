@@ -51,8 +51,8 @@ if (!isset($_SESSION['admin_name'])) {
                 <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i data-feather="users"></i> <span class="d-none d-xl-inline-block ms-1 fw-medium"><?php echo $_SESSION['admin_name']; ?></span> <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i> </button>
                 <div class="dropdown-menu dropdown-menu-end">
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="new-admin.php"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Add Admin User</a>
-                    <a class="dropdown-item" href="logout.php"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                    <a class="dropdown-item" href="new-admin.php"><i data-feather="user-plus"></i>Add Admin User</a>
+                    <a class="dropdown-item" href="logout.php"><i data-feather="log-out"></i> Logout</a>
                 </div>
             </div>
         </div>
@@ -68,6 +68,17 @@ if (!isset($_SESSION['admin_name'])) {
                 <li class="menu-title" data-key="t-menu">Menu</li>
                 <li>
                     <a href="index.php"> <i data-feather="home"></i> <span data-key="t-dashboard">Dashboard</span> </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow"> <i data-feather="file-minus"></i> <span data-key="t-apps">Announcements</span> </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="all-announcements.php"> <span data-key="t-calendar">All Announcements</span> </a>
+                        </li>
+                        <li>
+                            <a href="add-announcement.php"> <span data-key="t-chat">Add Announcements</span> </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow"> <i data-feather="box"></i> <span data-key="t-apps">Church Events</span> </a>

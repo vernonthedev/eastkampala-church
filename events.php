@@ -6,7 +6,6 @@ include "config.php";
 ?>
 
 <?php
-include 'config.php';
 
 $sql = "SELECT * FROM event_list ORDER BY event_id DESC";
 $run_query = $conn->prepare($sql);
