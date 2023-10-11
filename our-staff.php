@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html class="no-js" lang="en">
-<?php include 'head.php'?>
+<?php include 'head.php';
+include "config.php";?>
 <body>
 <div class="body">
   <!-- Start Site Header -->
@@ -38,42 +39,41 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
+
+            <?php
+            //SELECTING ALL THE CHURCH MEMBER HEADS
+            $view_data = "SELECT * FROM member_list";
+            $run_query = $conn->prepare($view_data);
+            $run_query->execute();
+            ?>
+
+                <?php
+                $rows = $run_query->fetchAll();
+                foreach($rows as $row){
+                ?>
+
           <div class="col-md-4 col-sm-4">
             <div class="grid-item staff-item">
               <div class="grid-item-inner">
-                <div class="media-box"> <img src="http://placehold.it/500x300&amp;text=IMAGE+PLACEHOLDER" alt=""> </div>
+                <div class="media-box"> <img src="admin/team-images/<?php echo $row->member_img; ?>" alt="" width="500" height="700px"> </div>
                 <div class="grid-content">
-                  <h3>Melina Mironescu</h3>
-                  <nav class="social-icons"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a> </nav>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  <h3><?php echo $row->member_name;?></h3>
+                  <nav class="social-icons"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> </nav>
+                  <p><?php echo $row->member_title; ?></p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="grid-item staff-item">
-              <div class="grid-item-inner">
-                <div class="media-box"> <img src="http://placehold.it/500x300&amp;text=IMAGE+PLACEHOLDER" alt=""> </div>
-                <div class="grid-content">
-                  <h3>Francisc Cazan</h3>
-                  <nav class="social-icons"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a> </nav>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="grid-item staff-item">
-              <div class="grid-item-inner">
-                <div class="media-box"> <img src="http://placehold.it/500x300&amp;text=IMAGE+PLACEHOLDER" alt=""> </div>
-                <div class="grid-content">
-                  <h3>Ethan Kay</h3>
-                  <nav class="social-icons"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a> </nav>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <?php
+                }
+                ?>
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
