@@ -94,11 +94,14 @@
                     <li><a href="gallery.php">Church Images</a></li>
                   </ul>
                 </li>
-                  <li><a href="gc.php"><ion-icon name="people-circle"></ion-icon>G-C</a>
+                  <li><a href="gc.php"><ion-icon name="earth"></ion-icon>Global</a>
                       <ul class="dropdown">
-                          <li><a href="#">About General Conference</a></li>
-                          <li><a href="#">Fundamental Beliefs</a></li>
-                          <li><a href="#">Church History</a></li>
+                          <li><a href="#">Global Youth Day</a></li>
+                          <li><a href="#">Global Youth Congress</a></li>
+                          <li><a href="#">World Pathfinder Day</a></li>
+                          <li><a href="#">Public Campus Ministry Day</a></li>
+                          <li><a href="#">Week of Prayer</a></li>
+                          <li><a href="#"> e-Week of Prayer</a></li>
                       </ul>
                   </li>
               </ul>
