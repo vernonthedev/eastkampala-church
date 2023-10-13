@@ -81,7 +81,7 @@
                 </li>
                 <li><a href="sermons.php"><ion-icon name="file-tray-full"></ion-icon>Sermons</a>
                   <ul class="dropdown">
-                    <li><a href="sermons.php">Sermons Archive</a></li>
+                    <li><a href="sermon-albums.php">Sermons Archive</a></li>
                       <li><a href="daily-devotion.php">Daily Devotions</a></li>
                       <li><a href="inverse-devotions.php">Inverse Devotions</a></li>
                       <li><a href="adult-lesson.php">Adult Bible Lesson</a></li>

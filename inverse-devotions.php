@@ -23,7 +23,7 @@ $rows = $result->fetchAll();
 <?php include "header.php";?>
 <!-- End Site Header -->
 <!-- Start Nav Backed Header -->
-<div class="nav-backed-header parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);">
+<div class="nav-backed-header parallax" style="background-image:url(images/devotional-banner.jpeg); height: 477px;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -52,9 +52,15 @@ $rows = $result->fetchAll();
 <section>
     <div class="container">
         <div class="col-lg-8 col-md-8 ml-10 pl-49">
-        <div class="mx-auto"> <!-- Add the mx-auto class to center the content -->
+        <div class="mx-auto">
+            <!-- Add the mx-auto class to center the content -->
+            <h3 class="text-align-right text-muted">What about in God’s eyes? Where do you fit in God’s universe?</h3>
+            <p>
+                <blockquote>
+                "My Identity in Christ seeks to help you answer these questions and more. All of us must choose for ourselves—What do we believe? Why be a Christian? We are made in the image of our Creator. And He thinks you’re valuable—in fact, He thinks you’re worth dying for.
+            </p></blockquote>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body ">
                     <table class="table table-dark table-borderless">
                         <thead>
                         <tr>
@@ -72,7 +78,7 @@ $rows = $result->fetchAll();
                             echo "<tr>";
                             echo "<td>".$count."</td>";
                             echo "<td>".'<ion-icon name="document" style="font-size: 20px;"></ion-icon>'.$row->filename."</td>";
-                            echo '<td><a href="admin/uploads/files/'.$row->filename.'" class="btn btn-dark" download> <ion-icon name="cloud-download" style="font-size: 20px;"></ion-icon> Download</a></td>';
+                            echo '<td><a href="admin/uploads/files/'.$row->filename.'" class="btn btn-dark-outline" download> <ion-icon name="cloud-download" style="font-size: 20px;"></ion-icon> Download</a></td>';
                             echo "</tr>";
                             $count++;
                         }

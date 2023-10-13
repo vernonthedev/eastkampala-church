@@ -65,12 +65,6 @@ $rows = $run_query->fetchAll();
                                             <h3><a href="sermon-details.php?id=<?php echo $row->news_id; ?>"><?php echo $row->news_title; ?></a></h3>
                                             <span class="meta-data"><i class="fa fa-calendar"></i> <?php echo $newsDate ?> <a href="#">by <?php echo $row->news_place; ?></a></span>
                                         </div>
-                                        <div class="col-md-3 col-sm-3 sermon-actions">
-                                            <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Video"><i class="fa fa-video-camera"></i></a>
-                                            <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Audio"><i class="fa fa-headphones"></i></a>
-                                            <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Read online"><i class="fa fa-file-text-o"></i></a>
-                                            <a href="#" data-placement="top" data-toggle="tooltip" data-original-title="Download PDF"><i class="fa fa-book"></i></a>
-                                        </div>
                                     </div>
                                 </header>
                                 <div class="post-content">

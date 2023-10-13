@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb text-bg-dark">
                         <li><a href="index.php">Home</a></li>
                         <li class="active">Church Gallery</li>
                     </ol>
