@@ -43,15 +43,15 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-4">
                                     <a href="audio-sermons.php" class="album-cover">
-                                        <span class="album-image"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></span>
+                                        <span class="album-image"><img src="images/webimages/audiofile.jpg" alt=""></span>
                                     </a>
                                     <div class="label label-default album-count">16 videos</div>
                                     <div class="label label-default album-count">6 audios</div>
                                 </div>
                                 <div class="col-md-8 col-sm-8">
                                     <h3><a href="audio-sermons.php.php">Audio Collection</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                    <p><a href="#" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
+                                    <p>Unleash the power of your ears and embark on an extraordinary audio odyssey. Tune into our soul-stirring audio sermons to ignite your imagination and transcend into realms of wisdom and wonder.</p>
+                                    <p><a href="audio-sermons.php" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -60,15 +60,15 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-4">
                                     <a href="video-sermons.php" class="album-cover">
-                                        <span class="album-image"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></span>
+                                        <span class="album-image"><img src="images/webimages/video.jpg" alt=""></span>
                                     </a>
                                     <div class="label label-default album-count">16 videos</div>
                                     <div class="label label-default album-count">6 audios</div>
                                 </div>
                                 <div class="col-md-8 col-sm-8">
                                     <h3><a href="video-sermons.php">Video Collection</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                    <p><a href="#" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
+                                    <p>Discover the sacred journey within. Embrace wisdom, find solace, and awaken your spirit through our enlightening video sermons. Click now to nurture your soul and kindle divine inspiration.</p>
+                                    <p><a href="video-sermons.php" class="btn btn-primary">Play <i class="fa fa-play"></i></a></p>
                                 </div>
                             </div>
                         </div>
