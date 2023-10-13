@@ -9,7 +9,7 @@ $targetFile = $targetDir . basename($_FILES["audio_sermon"]["name"]);
 $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
 // check if the file is a pdf and less than 2MB
-if($fileType != "mp3" || $_FILES["audio_sermon"]["size"] > 20000000){
+if($fileType != "mp3" || $_FILES["audio_sermon"]["size"] > 100000000){
     echo '<script> alert("Only mp3 Files less than 20MB are allowed to be uploaded.")</script>';
 }else{
     //move the uploaded file to the uploads folder
