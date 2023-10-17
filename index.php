@@ -186,13 +186,13 @@ include "config.php";
 
                               <li class="isermons-dl-files">
                                   <a href="video-sermons.php">
-                                  <ion-icon name="logo-youtube" size="large" aria-label="Favorite"></ion-icon>
+                                  <img src="images/icons/video.png" width="30px" alt="Watch Video Sermons"/>
                                   </a>
                                   <a href="audio-sermons.php">
-                                  <ion-icon name="mic-outline" size="large"></ion-icon>
+                                      <img src="images/icons/play_audio.png" width="30px" alt="Listen to audio devotion"/>
                                   </a>
                                   <a href="daily-devotion.php">
-                                  <ion-icon name="cloud-download-outline" size="large"></ion-icon>
+                                      <img src="images/icons/download.png" width="30px" alt="Download Daily Devotion" data-bs-toggle="tooltip" data-bs-placement="left" title data-bs-original-title="Download devotion"/>
                                   </a>
                               </li>
 

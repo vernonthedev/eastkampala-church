@@ -6,7 +6,7 @@
                 <h4 class="footer-widget-title">About our Church</h4>
                 <img src="images/east%20kampala%20logo.png" alt="East Kampala Seventh Day Adventist Church Logo" width="200px">
                 <div class="spacer-20"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis consectetur adipiscing elit. Nulla convallis egestas rhoncus</p>
+                <p>East Kampala SDA Church: A vibrant Seventh-day Adventist congregation in the heart of Kampala, dedicated to worship, community, and spiritual growth. Join us on a path to faith and fellowship.</p>
             </div>
             <div class="col-md-4 col-sm-4 widget footer-widget">
                 <h4 class="footer-widget-title">Quick Links</h4>
@@ -33,9 +33,10 @@
             </div>
             <div class="copyrights-col-right col-md-6 col-sm-6">
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/sdaeastkampala/" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon>
-                    <a href="https://www.youtube.com/@eastkampalasdachurch" target="_blank"><ion-icon name="logo-youtube" size="large"></ion-icon>
-                    <a href="livestream.php"><ion-icon name="videocam" size="large"></ion-icon></a> </div>
+                    <a href="https://www.facebook.com/sdaeastkampala/" target="_blank"><img src="images/icons/facebook.png" alt="facebook link for east kampala sda church"/></a>
+                        <a href="https://www.youtube.com/@eastkampalasdachurch" target="_blank"><img src="images/icons/youtube.png" alt="youtube link for east kampala sda"/></a>
+                    <a href="livestream.php"><img src="images/icons/video.png" alt="livestream video from east kampala sda"/></a>
+                </div>
             </div>
         </div>
     </div>

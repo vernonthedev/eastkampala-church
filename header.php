@@ -1,4 +1,12 @@
+<?php
 
+$sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
+$run_query = $conn->prepare($sql);
+$run_query->execute();
+$rows = $run_query->fetchAll();
+
+
+?>
 
 <!-- Start Site Header -->
   <header class="site-header">
@@ -10,8 +18,8 @@
           </div>
           <div class="col-md-8 col-sm-6 col-xs-4">
             <ul class="top-navigation hidden-sm hidden-xs">
-              <li><a href="plan-visit.php">Plan your visit</a></li>
-              <li><a href="donate.php">Donate Now</a></li>
+              <li><a href="plan-visit.php"><img src="images/icons/planner_500px.png" width="20px"/>Plan your visit</a></li>
+              <li><a href="donate.php"><img src="images/icons/donate.png" width="20px"/>Donate Now</a></li>
             </ul>
             <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> </div>
         </div>
@@ -23,12 +31,12 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="index.php"><ion-icon name="home"></ion-icon>Home</a>
+                <li><a href="index.php"><img src="images/icons/home.png" width="20px"/>Home</a>
                     <ul class="dropdown">
-                        <li><a href="livestream.php"> <ion-icon name="videocam"></ion-icon>Livestream</a></li>
+                        <li><a href="livestream.php"> <img src="images/icons/live.png" width="20px"/>Livestream</a></li>
                     </ul>
                 </li>
-                <li><a href="about.php"><ion-icon name="megaphone"></ion-icon>About Us</a>
+                <li><a href="about.php"><img src="images/icons/about.png"/>About Us</a>
                   <ul class="dropdown">
                     <li><a href="about.php">Overview</a></li>
                     <li><a href="church-history.php">Our History</a></li>
@@ -36,7 +44,7 @@
                 	<li><a href="contact.php">Contact</a></li>
                   </ul>
                 </li>
-                <li class="megamenu"><a href="shortcodes.html"><ion-icon name="book"></ion-icon>Ministry</a>
+                <li class="megamenu"><a href="shortcodes.html"><img src="images/icons/ministry.png" width="20"/>Ministry</a>
                   <ul class="dropdown">
                     <li>
                       <div class="megamenu-container container">
@@ -55,9 +63,16 @@
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-clock-o"></i> Upcoming Events</span>
                             <ul class="sub-menu">
-                              <li><a href="event-details.php">Monday Prayer</a> <span class="meta-data">Monday | 06:00 PM</span> </li>
-                              <li><a href="event-details.php">Staff members meet</a> <span class="meta-data">Tuesday | 08:00 AM</span> </li>
-                              <li><a href="event-details.php">Evening Prayer</a> <span class="meta-data">Friday | 07:00 PM</span> </li>
+                                <?php
+                                //loop through the retrieved programs
+                                foreach($rows as $row){
+                                //formating the date into human-readable format
+                                $eventDate = date("l, F j, Y", strtotime($row->event_date));
+                                ?>
+                              <li><a href="event-details.php?id=<?php echo $row->event_id; ?>"><?php echo $row->event_title; ?></a> <span class="meta-data"><?php echo $eventDate?></span> </li>
+                                <?php
+                                }
+                                ?>
                             </ul>
                           </div>
                             <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-american-sign-language-interpreting"></i> Counselling Services</span>
@@ -72,14 +87,14 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="events.php"><ion-icon name="notifications"></ion-icon>Events</a>
+                <li><a href="events.php"><img src="images/icons/events.png" width="20"/>Events</a>
                   <ul class="dropdown">
                     <li><a href="events.php">Events Organised</a></li>
                     <li><a href="announcements.php">Announcements</a></li>
                     <li><a href="bulletin.php">Sabbath Bulletin</a></li>
                   </ul>
                 </li>
-                <li><a href="sermons.php"><ion-icon name="file-tray-full"></ion-icon>Sermons</a>
+                <li><a href="sermons.php"><img src="images/icons/sermons.png" width="20"/>Sermons</a>
                   <ul class="dropdown">
                     <li><a href="sermon-albums.php">Sermons Archive</a></li>
                       <li><a href="daily-devotion.php">Daily Devotions</a></li>
@@ -89,12 +104,12 @@
 
                   </ul>
                 </li>
-                <li><a href="gallery.php"><ion-icon name="image"></ion-icon>Gallery</a>
+                <li><a href="gallery.php"><img src="images/icons/gallery.png" width="20"/>Images</a>
                   <ul class="dropdown">
                     <li><a href="gallery.php">Church Images</a></li>
                   </ul>
                 </li>
-                  <li><a href="gc.php"><ion-icon name="earth"></ion-icon>Global</a>
+                  <li><a href="gc.php"><img src="images/icons/global.png" width="20"/>Global</a>
                       <ul class="dropdown">
                           <li><a href="#">Global Youth Day</a></li>
                           <li><a href="#">Global Youth Congress</a></li>
