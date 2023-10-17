@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html class="no-js">
 <?php
 include"head.php";
 
@@ -20,7 +19,7 @@ if($recv != $row->event_id){
 $eventDate = date("l, F j, Y", strtotime($row->event_date));
 ?>
 
-?>
+
 <body>
 <div class="body">
   <!-- Start Site Header -->

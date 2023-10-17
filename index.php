@@ -124,28 +124,28 @@ include "config.php";
               </header>
               <section class="listing-cont">
                 <ul>
+                    <?php
+                    $sql = "SELECT * FROM announcements ORDER BY ann_id DESC LIMIT 3";
+                    $run_query = $conn->prepare($sql);
+                    $run_query->execute();
+                    $rows = $run_query->fetchAll();
+
+                    foreach ($rows as $row){
+                    ?>
                   <li class="item post">
                     <div class="row">
-                      <div class="col-md-4"> <a href="#" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a></div>
+                      <div class="col-md-4"> <a href="#" class="media-box"> <img src="images/annouce.jpg" alt="" class="img-thumbnail" width="60px"> </a></div>
                       <div class="col-md-8">
                         <div class="post-title">
-                          <h2><a href="daily-devotion.php">Voluptatum deleniti atque corrupti</a></h2>
-                          <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+                          <h2><a href="announcements.php"><?php echo $row->ann_title; ?></a></h2>
+                        <p><?php echo $row->ann_content; ?></p>
                       </div>
                     </div>
                   </li>
-                  <li class="item post">
-                    <div class="row">
-                      <div class="col-md-4"> <a href="daily-devotion.php" class="media-box"> <img src="http://placehold.it/800x600&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"> </a></div>
-                      <div class="col-md-8">
-                        <div class="post-title">
-                          <h2><a href="daily-devotion.php">Voluptatum deleniti atque corrupti</a></h2>
-                          <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
-                      </div>
-                    </div>
-                  </li>
+                    <?php
+                    }
+                    ?>
+
                 </ul>
               </section>
             </div>
@@ -155,7 +155,7 @@ include "config.php";
             <!-- Latest Sermons -->
             <div class="listing sermons-listing">
               <header class="listing-header">
-                <h3>Recent Sermons</h3>
+                <h3>Recent Devotion</h3>
               </header>
               <section class="listing-cont">
                 <ul>
@@ -201,12 +201,28 @@ include "config.php";
   <div class="featured-gallery">
     <div class="container">
       <div class="row">
+
         <div class="col-md-3 col-sm-3">
           <h4>Updates from our gallery</h4>
-          <a href="#" class="btn btn-default btn-lg">More Galleries</a> </div>
-        <div class="col-md-3 col-sm-3 post format-image"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" class="media-box" data-rel="prettyPhoto[Gallery]"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-        <div class="col-md-3 col-sm-3 post format-video"> <a href="http://youtu.be/NEFfnbQlGo8" class="media-box" data-rel="prettyPhoto[Gallery]"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-        <div class="col-md-3 col-sm-3 post format-image"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" class="media-box" data-rel="prettyPhoto[Gallery]"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
+        </div>
+            <?php
+            // Fetch the 3 latest images from the galleries table
+            $sql = "SELECT * FROM image_gallery ORDER BY gallery_id DESC LIMIT 3";
+            $viewing_img = $conn->prepare($sql);
+            $viewing_img->execute();
+
+            while ($row = $viewing_img->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <div class="col-md-3 col-sm-3 post format-image">
+                    <a href="admin/images-gallery/<?php echo $row['gallery_img']; ?>" class="media-box" data-rel="prettyPhoto[Gallery]">
+                        <img src="admin/images-gallery/<?php echo $row['gallery_img']; ?>" alt="<?php echo $row['gallery_title']; ?>" width="400px">
+                    </a>
+                </div>
+
+                <?php
+            }
+            ?>
+
       </div>
     </div>
   </div>
