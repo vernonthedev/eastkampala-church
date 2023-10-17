@@ -5,9 +5,6 @@ include "head.php";
 include "config.php";
 ?>
 <body>
-<!--[if lt IE 7]>
-	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-<![endif]-->
 <div class="body">
 <?php include 'header.php';?>
     <!-- Start Hero Slider -->
@@ -134,7 +131,7 @@ include "config.php";
                     ?>
                   <li class="item post">
                     <div class="row">
-                      <div class="col-md-4"> <a href="#" class="media-box"> <img src="images/annouce.jpg" alt="" class="img-thumbnail" width="60px"> </a></div>
+                      <div class="col-md-4"> <a href="#" class="media-box"> <img src="images/icons/planner_500px.png" alt="" class="img-thumbnail" width="60px"> </a></div>
                       <div class="col-md-8">
                         <div class="post-title">
                           <h2><a href="announcements.php"><?php echo $row->ann_title; ?></a></h2>

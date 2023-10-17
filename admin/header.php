@@ -151,7 +151,7 @@ if (!isset($_SESSION['admin_name'])) {
                         <li><a href="add-inverse.php" data-key="t-maintenance">Add Inverse Lesson</a></li>
                         <li><a href="add-audio.php" data-key="t-maintenance">Add Audio Sermons</a></li>
                         <li><a href="#" data-key="t-maintenance">Add Bulletins</a></li>
-                        <li><a href="#" data-key="t-maintenance">Add Today's Prayer</a></li>
+                        <li><a href="add-prayer.php" data-key="t-maintenance">Add Today's Prayer</a></li>
                     </ul>
                 </li>
 
