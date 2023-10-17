@@ -152,45 +152,58 @@ include "config.php";
           </div>
           <!-- Start Sidebar -->
           <div class="col-md-4 col-sm-6">
-            <!-- Latest Sermons -->
+            <!-- Latest devotion -->
             <div class="listing sermons-listing">
+                <?php
+                $sql = "SELECT * FROM news ORDER BY news_id DESC LIMIT 1";
+                $run_query = $conn->prepare($sql);
+                $run_query->execute();
+                $rows = $run_query->fetchAll();
+
+                ?>
+
+                <?php
+                foreach($rows as $row){
+                // Formatting the date into a human-readable format
+                $newsDate = date("l, F j, Y", strtotime($row->news_date));
+                ?>
+
               <header class="listing-header">
-                <h3>Recent Devotion</h3>
+                <h3>Today's Devotion</h3>
               </header>
               <section class="listing-cont">
                 <ul>
-                  <li class="item sermon featured-sermon"> <span class="date">Feb 14, 2014</span>
-                    <h4><a href="sermon-details.php">How To Recover The Cutting Edge</a></h4>
+                  <li class="item sermon featured-sermon"> <span class="date"><?php echo $newsDate ?></span>
+                    <h4><a href="sermon-details.php?id=<?php echo $row->news_id; ?>"><?php echo $row->news_title; ?></a></h4>
                     <div class="featured-sermon-video">
-                      <iframe width="200" height="150" src="http://player.vimeo.com/video/19564018?title=0&amp;byline=0&amp;color=007F7B"></iframe>
+                        <a href="sermon-details.php?id=<?php echo $row->news_id; ?>">
+                      <img width="200" height="550" src="admin/news-images/<?php echo $row->news_img; ?>" alt="<?php echo $row->news_title; ?>"/>
+                        </a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis consectetur adipiscing elit. Nulla convallis egestas rhoncus</p>
+                    <p><?php echo $row->news_content; ?></p>
                       <div class="isermons-sermon-actions">
                           <ul>
-                              <li class="isermons-pl-video isermons-pl-va"><a href="#isermons-video-modal2445" class="isermons-tip-top-left isermons-tip-rounded" tooltip-label="Play Video"><i class="isermons-icon-social-youtube"></i></a></li>
-
-                              <li class="isermons-pl-audio isermons-pl-va"><a href="#isermons-audio-modal2445" class="isermons-tip-top-left isermons-tip-rounded" tooltip-label="Play Audio"><i class="isermons-icon-microphone"></i></a></li>
 
                               <li class="isermons-dl-files">
+                                  <a href="video-sermons.php">
                                   <ion-icon name="logo-youtube" size="large" aria-label="Favorite"></ion-icon>
+                                  </a>
+                                  <a href="audio-sermons.php">
                                   <ion-icon name="mic-outline" size="large"></ion-icon>
+                                  </a>
+                                  <a href="daily-devotion.php">
                                   <ion-icon name="cloud-download-outline" size="large"></ion-icon>
+                                  </a>
                               </li>
 
                           </ul>
                       </div>
                   </li>
-                  <li class="item sermon">
-                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
-                    <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
-                  <li class="item sermon">
-                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
-                    <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
-                  <li class="item sermon">
-                    <h2 class="sermon-title"><a href="sermon-details.php">Voluptatum deleniti atque corrupti</a></h2>
-                    <span class="meta-data"><i class="fa fa-calendar"></i> on 17th Dec, 2013</span> </li>
                 </ul>
               </section>
+                <?php
+                }
+                ?>
             </div>
           </div
         </div>
