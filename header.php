@@ -1,5 +1,5 @@
 <?php
-
+include "config.php";
 $sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
 $run_query = $conn->prepare($sql);
 $run_query->execute();
@@ -89,9 +89,9 @@ $rows = $run_query->fetchAll();
                 </li>
                 <li><a href="events.php">Events</a>
                   <ul class="dropdown">
-                    <li><a href="events.php"><img src="images/icons/events.png" width="20"/>Events Organised</a></li>
+                    <li><a href="events.php"><img src="images/icons/events.png" width="20"/>Events</a></li>
                     <li><a href="announcements.php"><img src="images/icons/announcements.png" width="20"/>Announcements</a></li>
-                    <li><a href="bulletin.php"><img src="images/icons/bulletin.png" width="20"/>Sabbath Bulletin</a></li>
+                    <li><a href="bulletin.php"><img src="images/icons/bulletin.png" width="20"/>Bulletin</a></li>
                   </ul>
                 </li>
                 <li><a href="sermons.php">Sermons</a>
