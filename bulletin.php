@@ -45,7 +45,7 @@ include"config.php";?>
                                     <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> This Sabbath</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                                 </div>
                                 <div class="col-md-9 col-sm-9">
-                                    <h2><a href="single-event.html">Order of Sabbath Worship</a></h2>
+                                    <h2><a href="#">Order of Sabbath Worship</a></h2>
                                     <table class="table table-responsive">
                                         <thead>
                                         <tr>
@@ -101,13 +101,7 @@ include"config.php";?>
                                     <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> This Sabbath</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                                 </div>
                                 <div class="col-md-9 col-sm-9">
-                                    <h3><a href="single-event.html">DIVINE WORSHIP SERVICE LINEUP</a></h3>
-                                    <blockquote><strong>Theme    :</strong>  Holy</blockquote>
-                                    <blockquote><strong>Sermon    :  </strong>                              Love is a Verb</blockquote>
-                                    <blockquote><strong>Preacher   : </strong>                                          Elder Kasozi</blockquote>
-                                    <blockquote><strong>Keytext     : </strong>              Mathew</blockquote>
-                                    <blockquote><strong>Special Music    : </strong>               Church choir</blockquote>
-
+                                    <h3><a href="#">DIVINE WORSHIP SERVICE LINEUP</a></h3>
 
                                     <?php
                                     $sql = "SELECT * FROM serving_team ORDER BY id DESC LIMIT 1";

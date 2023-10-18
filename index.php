@@ -72,6 +72,51 @@ include "config.php";
           </div>
           <!-- End Featured Blocks -->
         </div>
+
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-8 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" data-appear-animation-delay="100" >
+                      <h2>Upcoming Sabbath Service</h2>
+                      <div class="tabs">
+                          <ul class="nav nav-tabs">
+                              <li class="active"> <a data-toggle="tab" href="#sampletab1"><strong> Theme </strong></a> </li>
+                              <li class=""> <a data-toggle="tab" href="#sampletab2"> <strong>Sermon Title</strong> </a> </li>
+                              <li class=""> <a data-toggle="tab" href="#sampletab3"> <strong>Preacher</strong> </a> </li>
+                              <li class=""> <a data-toggle="tab" href="#"> <strong>Key Text </strong></a> </li>
+                              <li class=""> <a data-toggle="tab" href="#"> <strong>Special Music </strong></a> </li>
+                          </ul>
+
+                          <div class="tab-content">
+                              <div id="sampletab1" class="tab-pane">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor.</p>
+                              </div>
+                              <div id="sampletab2" class="tab-pane">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum. </p>
+                              </div>
+                              <div id="sampletab3" class="tab-pane active">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum. </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-md-8 appear-animation bounceInRight appear-animation-visible" data-appear-animation="bounceInRight">
+                  <h2>Total Member Involvement</h2>
+<div class="alert alert-success fade in"> <a class="close" data-dismiss="alert" href="#">×</a> <strong>Reminder! </strong> Please Don't forget to come along with a friend this Sabbath. </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
         <div class="row">
           <div class="col-md-8 col-sm-6">
             <!-- Events Listing -->
