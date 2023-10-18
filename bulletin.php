@@ -42,13 +42,55 @@ include"config.php";?>
                         <article class="post">
                             <div class="row">
                                 <div class="col-md-3 col-sm-3">
-                                    <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
+                                    <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> This Sabbath</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                                 </div>
                                 <div class="col-md-9 col-sm-9">
-                                    <h3><a href="single-event.html">A sample post title</a></h3>
-                                    <a href="single-event.html"><img src="http://placehold.it/1200x427&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                    <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                                    <h2><a href="single-event.html">Order of Sabbath Worship</a></h2>
+                                    <table class="table table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>Service Name</th>
+                                            <th>Service Time</th>
+                                            <th>About</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><strong>SONG SERVICE</strong></td>
+                                            <td>8:00am - 9:00am</td>
+                                            <td class="text-muted">Hymns to praise our God through Music</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SABBATH SCHOOL</strong></td>
+                                            <td>9:00am - 9:30am</td>
+                                            <td class="text-muted">Reflecting on the work of the Gospel around the world</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CHURCH AT STUDY</strong></td>
+                                            <td>9:30am - 10:30am</td>
+                                            <td class="text-muted">Weekly Lesson Study</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SONG SERVICE AND PRAYER SESSION</strong></td>
+                                            <td>10:30am - 10:50am</td>
+                                            <td class="text-muted">Prayers, Hymns and praises in preparation for the divine worship. </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>DIVINE WORSHIP</strong></td>
+                                            <td>10:50am - 12:30pm</td>
+                                            <td class="text-muted">God is Present: Let us Worship Him</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>AFTERNOON PROGRAM</strong></td>
+                                            <td>12:30pm - 6:00pm</td>
+                                            <td class="text-muted">God is Present: Let us Worship Him</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <blockquote>Fellowship Lunch                                      12:30PM – 2:00 PM </blockquote>
+                                    <blockquote>Caring and Sharing                                    2:00PM – 4:00 PM</blockquote>
+                                    <blockquote>Outreach                                                 4:00PM – 5:00 PM</blockquote>
+                                    <blockquote>Sundown, Tea and Departure                     5:00PM – 6:00 PM</blockquote>
                                 </div>
                             </div>
                         </article>
