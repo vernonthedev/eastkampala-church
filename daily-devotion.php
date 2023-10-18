@@ -4,17 +4,6 @@
 <body>
 <?php
 include 'config.php';
-
-// Pagination setup
-$itemsPerPage = 7;
-$current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$offset = ($current_page - 1) * $itemsPerPage;
-
-$sql = "SELECT * FROM news ORDER BY news_id DESC LIMIT $offset, $itemsPerPage";
-$run_query = $conn->prepare($sql);
-$run_query->execute();
-$rows = $run_query->fetchAll();
-
 ?>
 
 <div class="body">
@@ -54,6 +43,15 @@ $rows = $run_query->fetchAll();
                     <div class="col-md-8 sermon-archive">
                         <!-- Sermons Listing -->
                         <?php
+                        // Pagination setup
+                        $itemsPerPage = 7;
+                        $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                        $offset = ($current_page - 1) * $itemsPerPage;
+
+                        $sql = "SELECT * FROM news ORDER BY news_id DESC LIMIT $offset, $itemsPerPage";
+                        $run_query = $conn->prepare($sql);
+                        $run_query->execute();
+                        $rows = $run_query->fetchAll();
                         foreach($rows as $row){
                             // Formatting the date into a human-readable format
                             $newsDate = date("l, F j, Y", strtotime($row->news_date));

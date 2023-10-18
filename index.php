@@ -68,7 +68,7 @@ include "config.php";
 
 
             <div class="col-md-4 col-sm-4 featured-block"> <a href="about.php" class="img-thumbnail"> <img src="images/new.jpg" width="600" height="200" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermons.php" class="img-thumbnail"> <img src="images/sermon.jpg" width="600" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermon-albums.php" class="img-thumbnail"> <img src="images/sermon.jpg" width="600" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
           </div>
           <!-- End Featured Blocks -->
         </div>

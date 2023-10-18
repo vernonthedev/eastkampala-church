@@ -6,13 +6,6 @@
 
 include 'config.php';
 
-$sql = "SELECT * FROM uploaded_files ORDER BY id DESC";
-$result = $conn->prepare($sql);
-$result->execute();
-$rows = $result->fetchAll();
-
-
-
 ?>
 <body>
 <!--[if lt IE 7]>
@@ -72,6 +65,10 @@ $rows = $result->fetchAll();
                         <tbody>
 
                         <?php
+                        $sql = "SELECT * FROM uploaded_files ORDER BY id DESC";
+                        $result = $conn->prepare($sql);
+                        $result->execute();
+                        $rows = $result->fetchAll();
                         $count =1;
                         foreach($rows as $row){
 
