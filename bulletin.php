@@ -94,32 +94,154 @@ include"config.php";?>
                                 </div>
                             </div>
                         </article>
+
                         <article class="post">
                             <div class="row">
                                 <div class="col-md-3 col-sm-3">
-                                    <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
+                                    <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> This Sabbath</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                                 </div>
                                 <div class="col-md-9 col-sm-9">
-                                    <h3><a href="single-event.html">An example post with a video from vimeo.com</a></h3>
-                                    <iframe width="200" height="150" src="http://player.vimeo.com/video/19564018?title=0&amp;byline=0&amp;color=007F7B"></iframe><br>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                    <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                                    <h3><a href="single-event.html">DIVINE WORSHIP SERVICE LINEUP</a></h3>
+                                    <blockquote><strong>Theme    :</strong>  Holy</blockquote>
+                                    <blockquote><strong>Sermon    :  </strong>                              Love is a Verb</blockquote>
+                                    <blockquote><strong>Preacher   : </strong>                                          Elder Kasozi</blockquote>
+                                    <blockquote><strong>Keytext     : </strong>              Mathew</blockquote>
+                                    <blockquote><strong>Special Music    : </strong>               Church choir</blockquote>
+
+                                    <table class="table table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>Service</th>
+                                            <th>Service Theme</th>
+                                            <th>Pulpit Team</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><strong>INTROIT</strong></td>
+                                            <td>“Surely the Presence of the Lord Is in This Place” </td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Introit Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CALL TO WORSHIP</strong></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Call to Worship<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted">Elder Kasozi</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>DOXOLOGY</strong></td>
+                                            <td>Glory be to the Father</td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Doxology<i class="fa fa-long-arrow-right"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>INVOCATION</strong></td>
+                                            <td></td>
+                                            <td class="text-muted">Elder Jofraim </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>WELCOME AND INTRODUCTION</strong></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Welcome Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted">Elder Charles</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>WELCOME SONG</strong></td>
+                                            <td>Family of God</td>
+                                            <td class="text-muted">Psalms: 34:3</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>OPENING SONG</strong></td>
+                                            <td>Let's Praise and Worship the Lord</td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Opening Hymn<i class="fa fa-long-arrow-right"></i></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><strong>PASTORAL PRAYER</strong></td>
+                                            <td>Kneel Down and worship God</td>
+                                            <td class="text-muted">Elder</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PRAYER SONG</strong></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Prayer Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted">Psalms:72:19</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>WORSHIP IN GIVING</strong></td>
+                                            <td>Blessed be the name of the Lord</td>
+                                            <td class="text-muted">Elder Balyegyusa</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SPECIAL MUSIC</strong></td>
+                                            <td>SDAH 670(Congregation stands as Choristers bring in offerings)</td>
+                                            <td class="text-muted">Choristers</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SCRIPTURE READING</strong></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Memory Text<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted">james</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SPECIAL MUSIC</strong></td>
+                                            <td>SDAH 670(Congregation stands as Choristers bring in offerings)</td>
+                                            <td class="text-muted">Choristers</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SERMON</strong></td>
+                                            <td>Sermon title</td>
+                                            <td class="text-muted">Elder</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CLOSING SONG</strong></td>
+                                            <td>Let's Praise and Worship the Lord</td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Closing Hymn<i class="fa fa-long-arrow-right"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>BENEDICTION</strong></td>
+                                            <td>Family of God</td>
+                                            <td class="text-muted">Elder Jofram</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SONG AFFIRMATION</strong></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Affirmation Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted">Psalm 57:20-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>RECESSIONAL</strong></td>
+                                            <td>Hymn Selected by Chorister</td>
+                                            <td class="text-muted">Choristers</td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                        </div>
+                                                        <div class="modal-body"> One fine body... </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+
+
                                 </div>
                             </div>
                         </article>
-                        <article class="post">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-3">
-                                    <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
-                                </div>
-                                <div class="col-md-9 col-sm-9">
-                                    <h3><a href="single-event.html">A soundcloud embedding example post</a></h3>
-                                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/69966731&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe><br><br>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                    <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
-                                </div>
-                            </div>
-                        </article>
+
+
                     </div>
                 </div>
             </div>
