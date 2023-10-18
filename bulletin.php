@@ -120,17 +120,17 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>INTROIT</strong></td>
                                             <td>“Surely the Presence of the Lord Is in This Place” </td>
-                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Introit Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#introit">Introit Song<i class="fa fa-long-arrow-right"></i></a></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CALL TO WORSHIP</strong></td>
-                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Call to Worship<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#call">Call to Worship<i class="fa fa-long-arrow-right"></i></a></td>
                                             <td class="text-muted">Elder Kasozi</td>
                                         </tr>
                                         <tr>
                                             <td><strong>DOXOLOGY</strong></td>
                                             <td>Glory be to the Father</td>
-                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Doxology<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dox">Doxology<i class="fa fa-long-arrow-right"></i></a></td>
                                         </tr>
                                         <tr>
                                             <td><strong>INVOCATION</strong></td>
@@ -139,7 +139,7 @@ include"config.php";?>
                                         </tr>
                                         <tr>
                                             <td><strong>WELCOME AND INTRODUCTION</strong></td>
-                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Welcome Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#welcome">Welcome Song<i class="fa fa-long-arrow-right"></i></a></td>
                                             <td class="text-muted">Elder Charles</td>
                                         </tr>
                                         <tr>
@@ -150,7 +150,7 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>OPENING SONG</strong></td>
                                             <td>Let's Praise and Worship the Lord</td>
-                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Opening Hymn<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#opening">Opening Hymn<i class="fa fa-long-arrow-right"></i></a></td>
                                         </tr>
 
                                         <tr>
@@ -160,7 +160,7 @@ include"config.php";?>
                                         </tr>
                                         <tr>
                                             <td><strong>PRAYER SONG</strong></td>
-                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Prayer Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#prayer">Prayer Song<i class="fa fa-long-arrow-right"></i></a></td>
                                             <td class="text-muted">Psalms:72:19</td>
                                         </tr>
                                         <tr>
@@ -175,7 +175,7 @@ include"config.php";?>
                                         </tr>
                                         <tr>
                                             <td><strong>SCRIPTURE READING</strong></td>
-                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Memory Text<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mem">Memory Text<i class="fa fa-long-arrow-right"></i></a></td>
                                             <td class="text-muted">james</td>
                                         </tr>
                                         <tr>
@@ -191,7 +191,7 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>CLOSING SONG</strong></td>
                                             <td>Let's Praise and Worship the Lord</td>
-                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Closing Hymn<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#closing">Closing Hymn<i class="fa fa-long-arrow-right"></i></a></td>
                                         </tr>
                                         <tr>
                                             <td><strong>BENEDICTION</strong></td>
@@ -200,7 +200,7 @@ include"config.php";?>
                                         </tr>
                                         <tr>
                                             <td><strong>SONG AFFIRMATION</strong></td>
-                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Affirmation Song<i class="fa fa-long-arrow-right"></i></a></td>
+                                            <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#affirm">Affirmation Song<i class="fa fa-long-arrow-right"></i></a></td>
                                             <td class="text-muted">Psalm 57:20-11</td>
                                         </tr>
                                         <tr>
@@ -213,29 +213,150 @@ include"config.php";?>
                                         </tbody>
                                     </table>
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-
-                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--INTROIT SECTION-->
+                                            <div class="modal fade" id="introit" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                            <h4 class="modal-title" id="myModalLabel">Introit</h4>
                                                         </div>
                                                         <div class="modal-body"> One fine body... </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save changes</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+<!--                            CALL TO WORSHIP SECTION-->
+                                <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="call" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">Call To Worship</h4>
+                                            </div>
+                                            <div class="modal-body"> One fine body... </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <hr>
                                 </div>
-
+                            </div>
+<!--DOXOLOGY-->
+                            <div class="modal fade" id="dox" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Doxology</h4>
+                                        </div>
+                                        <div class="modal-body"> One fine body... </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+<!--                        WELCOME SONG-->
+                    <div class="modal fade" id="welcome" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Welcome Song</h4>
+                                </div>
+                                <div class="modal-body"> One fine body... </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                OPENING HYMN-->
+                <div class="modal fade" id="opening" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Opening Hymn</h4>
+                            </div>
+                            <div class="modal-body"> One fine body... </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                PRAYER HYMN-->
+            <div class="modal fade" id="prayer" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Prayer Song</h4>
+                        </div>
+                        <div class="modal-body"> One fine body... </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--                MEM TEXT-->
+        <div class="modal fade" id="mem" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Memory Text</h4>
+                    </div>
+                    <div class="modal-body"> One fine body... </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--                CLOSING HYMN-->
+    <div class="modal fade" id="closing" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Closing Hymn</h4>
+                </div>
+                <div class="modal-body"> One fine body... </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                AFFIRMATION HYMN-->
+<div class="modal fade" id="affirm" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Affirmation Hymn</h4>
+            </div>
+            <div class="modal-body"> One fine body... </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
                                 </div>
                             </div>

@@ -81,6 +81,20 @@ if (!isset($_SESSION['admin_name'])) {
                     </ul>
                 </li>
                 <li>
+                    <a href="javascript: void(0);" class="has-arrow"> <i data-feather="file"></i> <span data-key="t-apps">Sabbath Bulletin</span> </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="#"> <span data-key="t-calendar">All Bulletin content</span> </a>
+                        </li>
+                        <li>
+                            <a href="add-songs.php"> <span data-key="t-chat"></span>Add Hymns</a>
+                        </li>
+                        <li>
+                            <a href="#"> <span data-key="t-chat"></span>Add Divine content</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="javascript: void(0);" class="has-arrow"> <i data-feather="box"></i> <span data-key="t-apps">Church Events</span> </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li>
