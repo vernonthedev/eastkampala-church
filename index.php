@@ -60,26 +60,43 @@ include "config.php";
               <div class="row">
                   <div class="col-md-8 appear-animation bounceInRight appear-animation-visible" data-appear-animation="bounceInRight" >
                       <h2>Upcoming Sabbath Service</h2>
+
                       <div class="tabs">
                           <ul class="nav nav-tabs">
-                              <li class="active"> <a data-toggle="tab" href="#sampletab1"><strong> Theme </strong></a> </li>
-                              <li class=""> <a data-toggle="tab" href="#sampletab2"> <strong>Sermon Title</strong> </a> </li>
-                              <li class=""> <a data-toggle="tab" href="#sampletab3"> <strong>Preacher</strong> </a> </li>
-                              <li class=""> <a data-toggle="tab" href="#"> <strong>Key Text </strong></a> </li>
-                              <li class=""> <a data-toggle="tab" href="#"> <strong>Special Music </strong></a> </li>
+                              <li class="active"> <a data-toggle="tab" href="#themetab"><strong> Theme </strong></a> </li>
+                              <li class=""> <a data-toggle="tab" href="#titletab"> <strong>Sermon Title</strong> </a> </li>
+                              <li class=""> <a data-toggle="tab" href="#preachertab"> <strong>Preacher</strong> </a> </li>
+                              <li class=""> <a data-toggle="tab" href="#texttab"> <strong>Key Text </strong></a> </li>
+                              <li class=""> <a data-toggle="tab" href="#musictab"> <strong>Special Music </strong></a> </li>
                           </ul>
-
+                          <?php
+                          // Select the latest three events by event_id in descending order
+                          $sql = "SELECT * FROM upcoming ORDER BY id DESC LIMIT 1";
+                          $run_query = $conn->prepare($sql);
+                          $run_query->execute();
+                          $rows = $run_query->fetchAll();
+                          foreach ($rows as $row){
+                          ?>
                           <div class="tab-content">
-                              <div id="sampletab1" class="tab-pane">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor.</p>
+                              <div id="themetab" class="tab-pane active">
+                                  <p><?php echo $row->theme; ?></p>
                               </div>
-                              <div id="sampletab2" class="tab-pane">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum. </p>
+                              <div id="titletab" class="tab-pane">
+                                  <p><?php echo $row->sermon_title; ?></p>
                               </div>
-                              <div id="sampletab3" class="tab-pane active">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique dignissim. Donec aliquam velit vitae mi dictum. </p>
+                              <div id="preachertab" class="tab-pane">
+                                  <p><?php echo $row->preacher; ?> </p>
+                              </div>
+                              <div id="texttab" class="tab-pane">
+                                  <p><?php echo $row->key_text; ?> </p>
+                              </div>
+                              <div id="musictab" class="tab-pane ">
+                                  <p><?php echo $row->music; ?> </p>
                               </div>
                           </div>
+                          <?php
+                          }
+                          ?>
                       </div>
                   </div>
               </div>
@@ -110,7 +127,7 @@ include "config.php";
               <section class="listing-cont">
                 <ul>
                     <?php
-                    include 'config.php';
+
 
                     // Select the latest three events by event_id in descending order
                     $sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
