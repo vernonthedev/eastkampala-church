@@ -5,13 +5,7 @@ include "head.php";
 include "config.php";
 ?>
 
-<?php
 
-$sql = "SELECT * FROM announcements ORDER BY ann_id DESC";
-$run_query = $conn->prepare($sql);
-$run_query->execute();
-$rows = $run_query->fetchAll();
-?>
 
 <body>
 <div class="body">
@@ -48,6 +42,13 @@ $rows = $run_query->fetchAll();
         <div id="content" class="content full">
             <div class="container">
                 <ul class="timeline">
+                    <?php
+
+                    $sql = "SELECT * FROM announcements ORDER BY ann_id DESC";
+                    $run_query = $conn->prepare($sql);
+                    $run_query->execute();
+                    $rows = $run_query->fetchAll();
+                    ?>
                     <?php
                     $isInverted = false; // Initialize the flag to false
                     foreach ($rows as $row) {

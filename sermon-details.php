@@ -1,17 +1,7 @@
 <?php
 include'config.php';
 
-$recv = $_GET['id'];
 
-$sql = "SELECT * FROM news WHERE news_id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$recv]);
-$rows = $stmt->fetchAll();
-foreach($rows as $row){
-if($recv != $row->news_id){
-    //show 404 page incase the user enters a value of page not available in the system
-    http_response_code(404);
-}else{
 ?>
 
 
@@ -54,9 +44,23 @@ if($recv != $row->news_id){
   </div>
   <!-- End Page Header --> 
   <!-- Start Content -->
+
   <div class="main" role="main">
     <div id="content" class="content full">
       <div class="container">
+          <?php
+$recv = $_GET['id'];
+
+$sql = "SELECT * FROM news WHERE news_id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$recv]);
+$rows = $stmt->fetchAll();
+foreach($rows as $row){
+    if($recv != $row->news_id){
+        //show 404 page incase the user enters a value of page not available in the system
+        http_response_code(404);
+    }else{
+          ?>
         <div class="row">
           <div class="col-md-9">
             <header class="single-post-header clearfix">

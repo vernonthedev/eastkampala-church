@@ -24,24 +24,7 @@ include "config.php";
         </ul>
     </div>
     <!-- End Hero Slider -->
-    <div class="notice-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">Next</span> <strong>Upcoming Event</strong> </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-event-title">
-                    <h5><a href="single-event.html">Sountheast Asia Meet</a></h5>
-                    <span class="meta-data">13th July, 2015</span> </div>
-                <div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="July 13, 2018" style="opacity: 0.5;">
-                    <div class="timer-col"> <span id="days">0</span> <span class="timer-type">days</span> </div>
-                    <div class="timer-col"> <span id="hours">00</span> <span class="timer-type">hrs</span> </div>
-                    <div class="timer-col"> <span id="minutes">00</span> <span class="timer-type">mins</span> </div>
-                    <div class="timer-col"> <span id="seconds">00</span> <span class="timer-type">secs</span> </div>
-                </div>
-                <div class="col-md-2 col-sm-6 hidden-xs"> <a href="events.html" class="btn btn-primary btn-lg btn-block">All Events</a> </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Notice Bar -->
+
     <!-- Start Content -->
   <div class="main" role="main">
     <div id="content" class="content full">
@@ -57,7 +40,7 @@ include "config.php";
               $rows = $run_query->fetchAll();
               foreach ($rows as $row) {
                   ?>
-                  <div class="col-md-4 col-sm-4 featured-block">
+                  <div class="col-md-4 col-sm-4 featured-block appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft"  >
                       <a href="our-staff.php" class="img-thumbnail">
                           <img src="admin/team-images/<?php echo $row->member_img; ?>" alt="staff">
                           <strong>Our Pastors</strong>
@@ -67,15 +50,15 @@ include "config.php";
               <?php } ?>
 
 
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="about.php" class="img-thumbnail"> <img src="images/new.jpg" width="600" height="200" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <a href="sermon-albums.php" class="img-thumbnail"> <img src="images/sermon.jpg" width="600" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" > <a href="about.php" class="img-thumbnail"> <img src="images/new.jpg" width="600" height="200" alt="staff"> <strong>New Here</strong> <span class="more">read more</span> </a> </div>
+            <div class="col-md-4 col-sm-4 featured-block appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" > <a href="sermon-albums.php" class="img-thumbnail"> <img src="images/sermon.jpg" width="600" alt="staff"> <strong>Sermons Archive</strong> <span class="more">read more</span> </a> </div>
           </div>
           <!-- End Featured Blocks -->
         </div>
 
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-md-8 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" data-appear-animation-delay="100" >
+                  <div class="col-md-8 appear-animation bounceInRight appear-animation-visible" data-appear-animation="bounceInRight" >
                       <h2>Upcoming Sabbath Service</h2>
                       <div class="tabs">
                           <ul class="nav nav-tabs">
@@ -104,7 +87,7 @@ include "config.php";
 
 
           <div class="row">
-              <div class="col-md-8 appear-animation bounceInRight appear-animation-visible" data-appear-animation="bounceInRight">
+              <div class="col-md-8 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" >
                   <h2>Total Member Involvement</h2>
 <div class="alert alert-success fade in"> <a class="close" data-dismiss="alert" href="#">×</a> <strong>Reminder! </strong> Please Don't forget to come along with a friend this Sabbath. </div>
               </div>
@@ -270,7 +253,7 @@ include "config.php";
                 ?>
                 <div class="col-md-3 col-sm-3 post format-image">
                     <a href="admin/images-gallery/<?php echo $row['gallery_img']; ?>" class="media-box" data-rel="prettyPhoto[Gallery]">
-                        <img src="admin/images-gallery/<?php echo $row['gallery_img']; ?>" alt="<?php echo $row['gallery_title']; ?>" width="400px">
+                        <img src="admin/images-gallery/<?php echo $row['gallery_img']; ?>" alt="<?php echo $row['gallery_title']; ?>" width="400px" height="400px">
                     </a>
                 </div>
 

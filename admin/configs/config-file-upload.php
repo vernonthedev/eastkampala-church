@@ -22,7 +22,7 @@ if($fileType != "pdf" || $_FILES["pdfFile"]["size"] > 2000000){
         $results = $conn->prepare($sql);
         $results->execute([$filename,$folder_path,$time_stamp]);
 
-        if($results===TRUE){
+        if($results->rowCount() >0){
             echo '<script>alert("File Uploaded Successfully")</script>';
         }else{
             echo '<script>alert("Error occurred.. ")</script>';

@@ -5,26 +5,7 @@ include "head.php";
 include "config.php";
 ?>
 
-<?php
-// Define the number of items to display per page
-$itemsPerPage = 10;
 
-// Determine the current page number
-if (isset($_GET['page'])) {
-    $currentPage = $_GET['page'];
-} else {
-    $currentPage = 1;
-}
-
-// Calculate the offset to start fetching records
-$offset = ($currentPage - 1) * $itemsPerPage;
-
-// Retrieve records for the current page
-$sql = "SELECT * FROM video_gallery ORDER BY video_id DESC LIMIT $itemsPerPage OFFSET $offset";
-$run_query = $conn->prepare($sql);
-$run_query->execute();
-$rows = $run_query->fetchAll();
-?>
 
 <body>
 <div class="body">
@@ -63,6 +44,26 @@ $rows = $run_query->fetchAll();
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="grid-holder col-3 events-grid">
+                            <?php
+                            // Define the number of items to display per page
+                            $itemsPerPage = 10;
+
+                            // Determine the current page number
+                            if (isset($_GET['page'])) {
+                                $currentPage = $_GET['page'];
+                            } else {
+                                $currentPage = 1;
+                            }
+
+                            // Calculate the offset to start fetching records
+                            $offset = ($currentPage - 1) * $itemsPerPage;
+
+                            // Retrieve records for the current page
+                            $sql = "SELECT * FROM video_gallery ORDER BY video_id DESC LIMIT $itemsPerPage OFFSET $offset";
+                            $run_query = $conn->prepare($sql);
+                            $run_query->execute();
+                            $rows = $run_query->fetchAll();
+                            ?>
                             <?php
                             // Loop through the retrieved programs
                             foreach ($rows as $row) {

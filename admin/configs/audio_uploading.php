@@ -23,7 +23,7 @@ if($fileType != "mp3" || $_FILES["audio_sermon"]["size"] > 100000000){
         $request = $conn->prepare($sql);
         $request->execute([$filename, $folder_path, $time_stamp]);
 
-        if($request == TRUE){
+        if($request->rowCount() >0){
             echo '<script>alert("File Uploaded Successfully")</script>';
         }else{
             echo '<script>alert("Error occurred.. ")</script>';

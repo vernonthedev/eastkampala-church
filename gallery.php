@@ -48,7 +48,7 @@
                         $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
                         $offset = ($current_page - 1) * $itemsPerPage;
 
-                        $sql = "SELECT * FROM image_gallery LIMIT $offset, $itemsPerPage";
+                        $sql = "SELECT * FROM image_gallery ORDER BY gallery_id DESC LIMIT $offset, $itemsPerPage";
                         $viewing_img = $conn->prepare($sql);
                         $viewing_img->execute();
 

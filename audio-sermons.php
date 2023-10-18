@@ -5,26 +5,6 @@ include "head.php";
 include "config.php";
 ?>
 
-<?php
-// Define the number of items to display per page
-$itemsPerPage = 10;
-
-// Determine the current page number
-if (isset($_GET['page'])) {
-    $currentPage = $_GET['page'];
-} else {
-    $currentPage = 1;
-}
-
-// Calculate the offset to start fetching records
-$offset = ($currentPage - 1) * $itemsPerPage;
-
-// Retrieve records for the current page
-$sql = "SELECT * FROM audio_uploads ORDER BY id DESC LIMIT $itemsPerPage OFFSET $offset";
-$run_query = $conn->prepare($sql);
-$run_query->execute();
-$rows = $run_query->fetchAll();
-?>
 
 <body>
 
@@ -88,6 +68,27 @@ $rows = $run_query->fetchAll();
                     <div class="col-md-12">
                         <ul class="grid-holder col-3 events-grid">
                             <?php
+                            // Define the number of items to display per page
+                            $itemsPerPage = 10;
+
+                            // Determine the current page number
+                            if (isset($_GET['page'])) {
+                                $currentPage = $_GET['page'];
+                            } else {
+                                $currentPage = 1;
+                            }
+
+                            // Calculate the offset to start fetching records
+                            $offset = ($currentPage - 1) * $itemsPerPage;
+
+                            // Retrieve records for the current page
+                            $sql = "SELECT * FROM audio_uploads ORDER BY id DESC LIMIT $itemsPerPage OFFSET $offset";
+                            $run_query = $conn->prepare($sql);
+                            $run_query->execute();
+                            $rows = $run_query->fetchAll();
+                            ?>
+
+                            <?php
                             // Loop through the retrieved programs
                             foreach ($rows as $row) {
                                 ?>
@@ -96,7 +97,7 @@ $rows = $run_query->fetchAll();
 
                                         <blockquote  >
                                         <audio controls>
-                                            <source src="admin/uploads/audios/<?php echo $row->audio_name?>" type="audio/mpeg">
+                                            <source src="admin/uploads/audios/<?php echo $row->audio_name?>" type="audio/mp3">
                                             Your browser does not support the audio element.
                                         </audio>
                                         </blockquote>

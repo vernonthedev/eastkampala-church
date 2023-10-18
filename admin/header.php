@@ -162,6 +162,7 @@ if (!isset($_SESSION['admin_name'])) {
                 <li>
                     <a href="javascript: void(0);" class="has-arrow"> <i data-feather="file"></i> <span data-key="t-pages">Upload Files</span> </a>
                     <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="add-upcoming-sermon.php" data-key="t-maintenance">Add Upcoming Sermon</a></li>
                         <li><a href="add-inverse.php" data-key="t-maintenance">Add Inverse Lesson</a></li>
                         <li><a href="add-audio.php" data-key="t-maintenance">Add Audio Sermons</a></li>
                         <li><a href="#" data-key="t-maintenance">Add Bulletins</a></li>
