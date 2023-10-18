@@ -126,37 +126,28 @@ include'config.php';
 <?php
 if (isset($_POST['submit'])) {
 
-    $e_title = $_POST['e_title'];
-    $e_date = $_POST['e_date'];
-    $e_place = $_POST['e_place'];
-    $e_img = $_POST['e_img'];
-    $e_content = $_POST['e_content'];
+    $introit = $_POST['introit'];
+    $callto = $_POST['callto'];
+    $doxology = $_POST['dox'];
+    $welcome = $_POST['welcome'];
+    $opening = $_POST['opening'];
+    $prayer = $_POST['prayerSong'];
+    $mem = $_POST['mem'];
+    $closing = $_POST['closing'];
+    $affirm = $_POST['affirm'];
 
-    $uploaddir = 'events';
-    if(!is_dir($uploaddir)){
-        mkdir($uploaddir);
-    }
 
-    $e_img = $_FILES['e_img']['name'];
-    $e_tmp = $_FILES['e_img']['tmp_name'];
-    $e_path = $uploaddir ."/". $e_img;
-
-    if(move_uploaded_file($e_tmp, $e_path)){
-
-        $insert_event = "INSERT INTO event_list(event_id, event_title, event_date, event_place, event_content, event_img) VALUES(?, ?, ?, ?, ?, ?)";
+        $insert_event = "INSERT INTO songs(id, introit, call_to_worship, doxology, welcome, opening, prayer_song, memory_text, closing, affirmation) VALUES(?, ?, ?, ?, ?, ?,?,?,?,?)";
         $run_query = $conn->prepare($insert_event);
-        $run_query->execute(["",$e_title,$e_date,$e_place,$e_content,$e_img]);
+        $run_query->execute(["",$introit,$callto,$doxology,$welcome,$opening,$prayer,$mem,$closing,$affirm]);
 
-        if ($run_query){
-            echo '<script>swal("Compelete", "Program Uploaded Successfully", "success");</script>';
+        if ($run_query->rowCount() > 0){
+            echo '<script>swal("Compelete", "Songs Uploaded Successfully", "success");</script>';
         }
         else{
-            echo '<script>swal("Failed", "Program Not Uploaded Successfully", "error");</script>';
+            echo '<script>swal("Failed", "Songs Not Uploaded Successfully", "error");</script>';
         }
-    }
-    else{
-        echo '<script>swal("Failed", "Program Not Uploaded ", "error");</script>';
-    }
+
 
 }
 
