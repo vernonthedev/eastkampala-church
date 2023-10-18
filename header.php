@@ -34,8 +34,8 @@ include "config.php";
                 </li>
                 <li><a href="about.php">About Us</a>
                   <ul class="dropdown">
-                    <li><a href="about.php"><img src="images/icons/about.png"/>Overview</a></li>
-                    <li><a href="church-history.php"><img src="images/icons/history.png"/>Our History</a></li>
+                    <li><a href="coming-soon.php"><img src="images/icons/about.png"/>Overview</a></li>
+                    <li><a href="coming-soon.php"><img src="images/icons/history.png"/>Our History</a></li>
                     <li><a href="our-staff.php"><img src="images/icons/pastors.png"/>Our Pastors</a></li>
                 	<li><a href="contact.php"><img src="images/icons/contacts_20px.png"/>Contact</a></li>
                   </ul>
@@ -62,10 +62,10 @@ include "config.php";
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-pagelines"></i> Our Ministries</span>
                             <ul class="sub-menu">
-                              <li><a href="womens-ministry.php"><img src="images/icons/ministry.png" width="20"/>Women's Ministry</a></li>
-                              <li><a href="mens-ministry.php"><img src="images/icons/ministry.png" width="20"/>Men's Ministry</a></li>
-                              <li><a href="childrens-ministry.php"><img src="images/icons/ministry.png" width="20"/>Children's Ministry</a></li>
-                              <li><a href="youth-ministry.php"><img src="images/icons/ministry.png" width="20"/>Senior Youth Ministry</a></li>
+                              <li><a href="coming-soon.php"><img src="images/icons/ministry.png" width="20"/>Women's Ministry</a></li>
+                              <li><a href="coming-soon.php"><img src="images/icons/ministry.png" width="20"/>Men's Ministry</a></li>
+                              <li><a href="coming-soon.php"><img src="images/icons/ministry.png" width="20"/>Children's Ministry</a></li>
+                              <li><a href="coming-soon.php"><img src="images/icons/ministry.png" width="20"/>Senior Youth Ministry</a></li>
                               <li><a href="#" data-bs-toggle="modal" data-bs-target="#prayerModal"><img src="images/icons/pray_20px.png" width="20"/>Prayer Requests</a></li>
                             </ul>
                           </div>
@@ -89,9 +89,9 @@ include "config.php";
                           </div>
                             <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-american-sign-language-interpreting"></i> Counselling Services</span>
                                 <ul class="sub-menu">
-                                    <li><a href="event-details.php"><img src="images/icons/counselor_20px.png"/> Personal Counselling <span class="meta-data">Login Here to Chat</span></a> </li>
-                                    <li><a href="event-details.php"><img src="images/icons/pray_20px.png"/>Prayer Band</a></li>
-                                    <li><a href="event-details.php"><img src="images/icons/family.png"/>Family and Marriage</a></li>
+                                    <li><a href="coming-soon.php"><img src="images/icons/counselor_20px.png"/> Personal Counselling <span class="meta-data">Login Here to Chat</span></a> </li>
+                                    <li><a href="coming-soon.php"><img src="images/icons/pray_20px.png"/>Prayer Band</a></li>
+                                    <li><a href="coming-soon.php"><img src="images/icons/family.png"/>Family and Marriage</a></li>
                                 </ul>
                             </div>
                         </div>
