@@ -109,7 +109,13 @@ include"config.php";?>
                                     <blockquote><strong>Special Music    : </strong>               Church choir</blockquote>
 
 
-
+                                    <?php
+                                    $sql = "SELECT * FROM serving_team ORDER BY id DESC LIMIT 1";
+                                    $run_query = $conn->prepare($sql);
+                                    $run_query->execute();
+                                    $rows = $run_query->fetchAll();
+                                    foreach($rows as $row){
+                                    ?>
                                     <table class="table table-responsive">
                                         <thead>
                                         <tr>
@@ -127,7 +133,7 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>CALL TO WORSHIP</strong></td>
                                             <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#call">Call to Worship<i class="fa fa-long-arrow-right"></i></a></td>
-                                            <td class="text-muted">Elder Kasozi</td>
+                                            <td class="text-muted"><?php echo $row->call_to_worship;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>DOXOLOGY</strong></td>
@@ -137,12 +143,12 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>INVOCATION</strong></td>
                                             <td></td>
-                                            <td class="text-muted">Elder Jofraim </td>
+                                            <td class="text-muted"><?php echo $row->invocation;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>WELCOME AND INTRODUCTION</strong></td>
                                             <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#welcome">Welcome Song<i class="fa fa-long-arrow-right"></i></a></td>
-                                            <td class="text-muted">Elder Charles</td>
+                                            <td class="text-muted"><?php echo $row->welcome;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>WELCOME SONG</strong></td>
@@ -158,7 +164,7 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>PASTORAL PRAYER</strong></td>
                                             <td>Kneel Down and worship God</td>
-                                            <td class="text-muted">Elder</td>
+                                            <td class="text-muted"><?php echo $row->pastoral;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>PRAYER SONG</strong></td>
@@ -168,31 +174,31 @@ include"config.php";?>
                                         <tr>
                                             <td><strong>WORSHIP IN GIVING</strong></td>
                                             <td>Blessed be the name of the Lord</td>
-                                            <td class="text-muted">Elder Balyegyusa</td>
+                                            <td class="text-muted"><?php echo $row->worship;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>SPECIAL MUSIC</strong></td>
                                             <td>SDAH 670(Congregation stands as Choristers bring in offerings)</td>
-                                            <td class="text-muted">Choristers</td>
+                                            <td class="text-muted"><?php echo $row->collection_music;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>SCRIPTURE READING</strong></td>
                                             <td><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mem">Memory Text<i class="fa fa-long-arrow-right"></i></a></td>
-                                            <td class="text-muted">james</td>
+                                            <td class="text-muted"><?php echo $row->scripture;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>SPECIAL MUSIC</strong></td>
                                             <td>SDAH 670(Congregation stands as Choristers bring in offerings)</td>
-                                            <td class="text-muted">Choristers</td>
+                                            <td class="text-muted"><?php echo $row->special_music;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>SERMON</strong></td>
                                             <td>Sermon title</td>
-                                            <td class="text-muted">Elder</td>
+                                            <td class="text-muted"><?php echo $row->sermon;?></td>
                                         </tr>
                                         <tr>
                                             <td><strong>CLOSING SONG</strong></td>
-                                            <td>Let's Praise and Worship the Lord</td>
+                                            <td><?php echo $row->closing_song;?></td>
                                             <td class="text-muted"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#closing">Closing Hymn<i class="fa fa-long-arrow-right"></i></a></td>
                                         </tr>
                                         <tr>
@@ -214,6 +220,12 @@ include"config.php";?>
 
                                         </tbody>
                                     </table>
+
+                                    <?php
+                                    }
+                                    ?>
+
+
                                     <?php
                                     $sql = "SELECT * FROM songs ORDER BY id DESC LIMIT 1";
                                     $run_query = $conn->prepare($sql);
