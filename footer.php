@@ -20,7 +20,19 @@
             </div>
             <div class="col-md-4 col-sm-4 widget footer-widget">
             <h4 class="footer-widget-title">Scan QR Code for Sabbath Bulletin</h4>
-                <img src="images/testQR.png" class="img-rounded img img-responsive" width="200px">
+                <?php
+                $view_data = "SELECT * FROM bulletin_qrcodes";
+                $viewing_data = $conn->prepare($view_data);
+                $viewing_data->execute();
+
+                //loop through the qrcode images and display just one
+                foreach($viewing_data as $row){
+                ?>
+                <img src="admin/bulletin-qrcode-gallery/<?php echo $row->bq_image; ?>" class="img-rounded img img-responsive" width="200px">
+                <?php
+                }
+                ?>
+
             </div>
         </div>
     </div>

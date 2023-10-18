@@ -1,9 +1,5 @@
 <?php
 include "config.php";
-$sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
-$run_query = $conn->prepare($sql);
-$run_query->execute();
-$rows = $run_query->fetchAll();
 
 
 ?>
@@ -49,8 +45,20 @@ $rows = $run_query->fetchAll();
                     <li>
                       <div class="megamenu-container container">
                         <div class="row">
+
                           <div class="col-md-3 hidden-sm hidden-xs"> <span class="megamenu-sub-title"><i class="fa fa-bell"></i> Today's Prayer</span>
-                            <iframe width="200" height="150" src="http://player.vimeo.com/video/19564018?title=0&amp;byline=0&amp;color=007F7B"></iframe>
+                              <?php
+                              $sql = "SELECT * FROM prayers ORDER BY prayer_id DESC LIMIT 1";
+                              $run_query = $conn->prepare($sql);
+                              $run_query->execute();
+                              $rows = $run_query->fetchAll();
+
+                              foreach ($rows as $row){
+                              ?>
+                            <img width="200" height="150" src="admin/prayers-gallery/<?php echo $row->prayer_img; ?>"/>
+                              <?php
+                              }
+                              ?>
                           </div>
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-pagelines"></i> Our Ministries</span>
                             <ul class="sub-menu">
@@ -64,6 +72,10 @@ $rows = $run_query->fetchAll();
                           <div class="col-md-3"> <span class="megamenu-sub-title"><i class="fa fa-clock-o"></i> Upcoming Events</span>
                             <ul class="sub-menu">
                                 <?php
+                                $sql = "SELECT * FROM event_list ORDER BY event_id DESC LIMIT 3";
+                                $run_query = $conn->prepare($sql);
+                                $run_query->execute();
+                                $rows = $run_query->fetchAll();
                                 //loop through the retrieved programs
                                 foreach($rows as $row){
                                 //formating the date into human-readable format
