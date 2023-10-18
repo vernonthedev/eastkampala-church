@@ -108,6 +108,8 @@ include"config.php";?>
                                     <blockquote><strong>Keytext     : </strong>              Mathew</blockquote>
                                     <blockquote><strong>Special Music    : </strong>               Church choir</blockquote>
 
+
+
                                     <table class="table table-responsive">
                                         <thead>
                                         <tr>
@@ -212,7 +214,13 @@ include"config.php";?>
 
                                         </tbody>
                                     </table>
-
+                                    <?php
+                                    $sql = "SELECT * FROM songs ORDER BY id DESC LIMIT 1";
+                                    $run_query = $conn->prepare($sql);
+                                    $run_query->execute();
+                                    $rows = $run_query->fetchAll();
+                                    foreach($rows as $row){
+                                    ?>
 <!--INTROIT SECTION-->
                                             <div class="modal fade" id="introit" tabindex="-1" role="dialog" aria-labelledby="introit" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -221,7 +229,7 @@ include"config.php";?>
                                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                             <h4 class="modal-title" id="myModalLabel">Introit</h4>
                                                         </div>
-                                                        <div class="modal-body"> One fine body... </div>
+                                                        <div class="modal-body"><?php echo $row->introit; ?></div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                                                         </div>
@@ -237,7 +245,7 @@ include"config.php";?>
                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 <h4 class="modal-title" id="myModalLabel">Call To Worship</h4>
                                             </div>
-                                            <div class="modal-body"> One fine body... </div>
+                                            <div class="modal-body"><?php echo $row->call_to_worship; ?></div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                                             </div>
@@ -253,7 +261,7 @@ include"config.php";?>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                             <h4 class="modal-title" id="myModalLabel">Doxology</h4>
                                         </div>
-                                        <div class="modal-body"> One fine body... </div>
+                                        <div class="modal-body"><?php echo $row->doxology; ?></div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                                         </div>
@@ -269,7 +277,7 @@ include"config.php";?>
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                     <h4 class="modal-title" id="myModalLabel">Welcome Song</h4>
                                 </div>
-                                <div class="modal-body"> One fine body... </div>
+                                <div class="modal-body"><?php echo $row->welcome; ?></div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                                 </div>
@@ -285,7 +293,7 @@ include"config.php";?>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h4 class="modal-title" id="myModalLabel">Opening Hymn</h4>
                             </div>
-                            <div class="modal-body"> One fine body... </div>
+                            <div class="modal-body"> <?php echo $row->opening; ?> </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                             </div>
@@ -301,7 +309,7 @@ include"config.php";?>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title" id="myModalLabel">Prayer Song</h4>
                         </div>
-                        <div class="modal-body"> One fine body... </div>
+                        <div class="modal-body"> <?php echo $row->prayer_song; ?></div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                         </div>
@@ -317,7 +325,7 @@ include"config.php";?>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="myModalLabel">Memory Text</h4>
                     </div>
-                    <div class="modal-body"> One fine body... </div>
+                    <div class="modal-body"> <?php echo $row->memory_text; ?></div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                     </div>
@@ -333,7 +341,7 @@ include"config.php";?>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel">Closing Hymn</h4>
                 </div>
-                <div class="modal-body"> One fine body... </div>
+                <div class="modal-body"> <?php echo $row->closing; ?> </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
                 </div>
@@ -349,7 +357,7 @@ include"config.php";?>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Affirmation Hymn</h4>
             </div>
-            <div class="modal-body"> One fine body... </div>
+            <div class="modal-body"> <?php echo $row->affirmation; ?> </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default inverted" data-dismiss="modal">Close</button>
             </div>
@@ -357,7 +365,9 @@ include"config.php";?>
     </div>
 </div>
 </div>
-
+<?php
+}
+?>
                                 </div>
                             </div>
                         </article>
