@@ -90,7 +90,7 @@ if (!isset($_SESSION['admin_name'])) {
                             <a href="add-songs.php"> <span data-key="t-chat"></span>Add Hymns</a>
                         </li>
                         <li>
-                            <a href="#"> <span data-key="t-chat"></span>Add Divine content</a>
+                            <a href="add-serving-team.php"> <span data-key="t-chat"></span>Add Serving Team</a>
                         </li>
                     </ul>
                 </li>
